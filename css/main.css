@@ -41,5 +41,6 @@ p {
     }
     .fixed-footer{
         bottom: 0;
+        text-align:center;
     } 
 
