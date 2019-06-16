@@ -43,3 +43,14 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+.iconFlex{
+  display: "inline-block", "flex";
+  height: 5%;
+  width: 100%;
+  padding: 2.5%;
+  bottom: 0;
+  position: fixed;
+  flex-direction: "row";
+  text-align: center;
+}
