@@ -27,11 +27,14 @@ p {
 
 .fixed-header, .fixed-footer{
         width: 100%;
+        left: 0;
         position: fixed; 
         background: #fff;
     }
     .fixed-header{
         top: 0;
+        list-style: none;
+        
     }
     .fixed-footer{
         bottom: 0;
