@@ -34,6 +34,7 @@ p {
     }
     .fixed-header{
         top: 0;
+        padding: 0px;
         list-style: none;
         
     }
