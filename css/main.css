@@ -33,14 +33,19 @@ p {
         position: fixed; 
         background: #fff;
     }
-    .fixed-header{
-        top: 0;
-        padding: 0px;
-        list-style: none;
+.fixed-header{
+    top: 0;
+    padding: 0px;
+    list-style: none;
         
-    }
-    .fixed-footer{
-        bottom: 0;
-        text-align:center;
-    } 
+}
+.fixed-footer{
+    bottom: 0;
+    text-align:center;
+} 
 
+.icon-flex{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+}
