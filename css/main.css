@@ -48,4 +48,5 @@ p {
     display:flex;
     flex-direction:row;
     justify-content: flex-end;
+    align-items: flex-start;
 }
