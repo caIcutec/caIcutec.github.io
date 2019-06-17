@@ -2,6 +2,7 @@
 
 body {
     width: 100%;
+    top:10%
 }
 
 a {
@@ -28,7 +29,6 @@ p {
 
 .container{
     width: 100%;
-    top: 30%;
 }
 
 .fixed-header, .fixed-footer{
