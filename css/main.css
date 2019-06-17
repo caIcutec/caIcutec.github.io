@@ -7,7 +7,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #999;
+    color: #ffffff;
 }
 
 a:hover {
@@ -17,7 +17,7 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family: 'Spectral', serif
-    color: #fff;
+    color: #ffffff;
 }
 
 p {
@@ -50,6 +50,7 @@ p {
 } 
 
 .icon-flex{
+    top:0px;
     display:flex;
     flex-direction:row;
     justify-content: flex-end;
