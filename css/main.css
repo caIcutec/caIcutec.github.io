@@ -23,7 +23,12 @@ h1 {
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #fff;
+    color: #000;
+}
+
+.container{
+    width: 100%;
+    top: 30%;
 }
 
 .fixed-header, .fixed-footer{
@@ -31,7 +36,7 @@ p {
         height: 10%;
         left: 0;
         position: fixed; 
-        background: #fff;
+        background: #000;
     }
 .fixed-header{
     top: 0;
