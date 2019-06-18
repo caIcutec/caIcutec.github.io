@@ -12,7 +12,6 @@
       animation-duration: 2s; 
       -webkit-animation-duration: 2s; 
       visibility: visible;
-      /*animation-fill-mode:forwards;*/
     }
     @keyframes slideUp {
       0% {
@@ -41,7 +40,6 @@
       animation-duration: 2s; 
       -webkit-animation-duration: 2s; 
       visibility: visible;
-      /*animation-fill-mode:forwards;*/
     }
     @keyframes slideDown {
       0% {
@@ -135,10 +133,8 @@
       window.onscroll = function() {adjustForScroll()};
       function adjustForScroll() {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-          document.getElementById("hidden-content").removeAttribute("slideDown");
           document.getElementById("hidden-content").setAttribute("slideUp");
         } else {
-          document.getElementById("hidden-content").removeAttribute("slideUp");
           document.getElementById("hidden-content").setAttribute("slideDown");
         }
         
