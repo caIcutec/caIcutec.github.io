@@ -132,9 +132,9 @@
       window.onscroll = function() {adjustForScroll()};
       function adjustForScroll() {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-          document.getElementById("hidden").id="slideUp";
+          document.getElementByClass("hidden-container").id="slideUp";
         } else {
-          document.getElementById("slideUp").id="slideDown";
+          document.getElementByClass("hidden-container").id="slideDown";
         }
         
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -152,7 +152,7 @@
       {{ content }}
       
       </div>
-      <div class="container" id="hidden">
+      <div class="hidden-container" id="hidden">
       
       {{ content }}
       
