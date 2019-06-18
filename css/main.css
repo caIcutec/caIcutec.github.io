@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Spectral&display=swap');
 
-.body {
+body {
     width: 100%;
     top:10%
 }
@@ -50,7 +50,7 @@ p {
     text-align:center;
 } 
 
-icon-flex{
+.icon-flex{
     top:0px;
     display:flex;
     flex-direction:row;
