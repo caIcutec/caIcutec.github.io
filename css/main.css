@@ -30,7 +30,7 @@ p {
 .container{
     top:40%;
     width: 100%;
-    color: #ffffff;
+    background-color: #ffffff;
 }
 
 .fixed-header, .fixed-footer{
