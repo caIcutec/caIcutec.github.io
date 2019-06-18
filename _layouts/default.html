@@ -132,17 +132,14 @@
       window.onscroll = function() {adjustForScroll()};
       function adjustForScroll() {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-          document.getElementByClass("hidden-container").id="slideUp";
+          document.getElementById("hidden-content").id="slideUp";
         } else {
-          document.getElementByClass("hidden-container").id="slideDown";
+          document.getElementById("hidden-content").id="slideDown";
         }
         
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
           document.getElementById("clear").style.animationFillMode = "forwards";
           document.getElementById("clear").id="makeOpaque");
-        } else {
-          document.getElementById("makeOpaque").style.animationFillMode = "backwards";
-          document.getElementById("makeOpaque").id="clear");
         }
       }
       </script>
@@ -152,7 +149,7 @@
       {{ content }}
       
       </div>
-      <div class="hidden-container" id="hidden">
+      <div class="container" id="hidden-content">
       
       {{ content }}
       
