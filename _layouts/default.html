@@ -130,18 +130,19 @@
       
       <script>
       window.onscroll = function() {adjustForScroll()};
-      function adjustForScroll() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-          document.getElementById("hidden-content").id="slideUp";
-        } else {
-          document.getElementById("hidden-content").id="slideDown";
+        
+        function adjustForScroll() {
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            document.getElementById("hidden-content").setAttribute("id","slideUp");
+          } else {    
+            document.getElementById("hidden-content").setAttribute("id","slideDown");
+          }
+        	        
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {	     
+            document.getElementById("clear").setAttribute("makeOpaque");	 
+          }
         }
         
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-          document.getElementById("clear").style.animationFillMode = "forwards";
-          document.getElementById("clear").id="makeOpaque");
-        }
-      }
       </script>
       
       <div class="container" id="content">
