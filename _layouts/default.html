@@ -40,6 +40,7 @@
       animation-duration: 2s; 
       -webkit-animation-duration: 2s; 
       visibility: visible;
+      animation-fill-mode: forward;
     }
     @keyframes slideDown {
       0% {
@@ -135,7 +136,7 @@
           if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             document.getElementById("hidden-content").setAttribute("id","slideUp");
           } else {    
-            document.getElementById("hidden-content").setAttribute("id","slideDown");
+            document.getElementById("slideUp").setAttribute("id","slideDown");
           }
         	        
           if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {	     
