@@ -2,7 +2,8 @@
 
 body {
     width: 100%;
-    top:10%
+    top:10%;
+    padding-top:40%;
 }
 
 a {
@@ -28,7 +29,6 @@ p {
 }
 
 .container, .hidden-container{
-    top:40%;
     right:5%;
     width: 90%;
     background-color: #ffffff;
