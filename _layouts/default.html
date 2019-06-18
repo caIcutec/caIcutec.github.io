@@ -132,11 +132,9 @@
       window.onscroll = function() {adjustForScroll()};
       function adjustForScroll() {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-          document.getElementById("slideDown").id="slideUp";
-          document.getElementById("slideUp").style.animationFillMode = "forwards"; 
+          document.getElementById("hidden").id="slideUp";
         } else {
           document.getElementById("slideUp").id="slideDown";
-          document.getElementById("slideDown").style.animationFillMode = "forwards"; 
         }
         
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -154,7 +152,7 @@
       {{ content }}
       
       </div>
-      <div class="container" id="slideDown">
+      <div class="container" id="hidden">
       
       {{ content }}
       
