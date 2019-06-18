@@ -7,7 +7,12 @@
     <!-- ANIMATED BODY -->
     <style>
     #slideUp {
-      animation-name: slideUp; webkit-animation-name: slideUp; animation-duration: 2s; -webkit-animation-duration: 2s; visibility: visible;
+      animation-name: slideUp; 
+      webkit-animation-name: slideUp; 
+      animation-duration: 2s; 
+      -webkit-animation-duration: 2s; 
+      visibility: visible;
+      animation-fill-mode:forwards;
     }
     @keyframes slideUp {
       0% {
@@ -31,7 +36,12 @@
     }
       
     #slideDown {
-    animation-name: slideDown; webkit-animation-name: slideDown; animation-duration: 2s; -webkit-animation-duration: 2s; visibility: visible;
+      animation-name: slideDown; 
+      webkit-animation-name: slideDown; 
+      animation-duration: 2s; 
+      -webkit-animation-duration: 2s; 
+      visibility: visible;
+      animation-fill-mode:forwards;
     }
     @keyframes slideDown {
       0% {
@@ -55,8 +65,13 @@
     }
       
     #makeOpaque {
-    top:0; padding:0px; list-style:none;
-    animation-name: makeOpaque; webkit-animation-name: makeOpaque; animation-duration: 1s; -webkit-animation-duration: 1s; visibility: visible;
+      top:0; padding:0px; list-style:none;
+      animation-name: makeOpaque; 
+      webkit-animation-name: makeOpaque; 
+      animation-duration: 1s; 
+      -webkit-animation-duration: 1s; 
+      visibility: visible;
+      animation-fill-mode:forwards;
     }
     @keyframes makeOpaque {
       0% {
