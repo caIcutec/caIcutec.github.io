@@ -120,8 +120,10 @@
       window.onscroll = function() {adjustForScroll()};
       function adjustForScroll() {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          document.getElementById("hidden-content").removeAttribute("slideDown")
           document.getElementById("hidden-content").setAttribute("id","slideUp");
         } else {
+          document.getElementById("hidden-content").removeAttribute("slideUp")
           document.getElementById("hidden-content").setAttribute("id","slideDown");
         }
         
