@@ -27,7 +27,7 @@ p {
     color: #000000;
 }
 
-.container{
+.container, .hidden-container{
     top:40%;
     right:5%;
     width: 90%;
