@@ -133,9 +133,10 @@
       window.onscroll = function() {adjustForScroll()};
       function adjustForScroll() {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-          document.getElementById("hidden-content").setAttribute("id","slideUp");
+          document.getElementById("slideDown").id="slideUp";
         } else {
-          document.getElementById("hidden-content").setAttribute("id","slideDown");
+          document.getElementById("slideUp").id="slideDown";
+          
         }
         
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -149,7 +150,7 @@
       {{ content }}
       
       </div>
-      <div class="container" id="hidden-content" style="opacticy:0">
+      <div class="container" id="slideDown" style="opacticy:0">
       
       {{ content }}
       
