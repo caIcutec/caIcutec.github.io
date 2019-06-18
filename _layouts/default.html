@@ -135,6 +135,7 @@
         function adjustForScroll() {
           if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             document.getElementById("hidden-content").setAttribute("id","slideUp");
+            document.getElementById("slideDown").setAttribute("id","slideUp");
           } else {    
             document.getElementById("slideUp").setAttribute("id","slideDown");
           }
