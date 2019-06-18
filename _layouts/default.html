@@ -75,12 +75,12 @@
       window.onscroll = function() {myFunction()};
       function myFunction() {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-          document.getElementById("bg").className = "slideUp";
+          document.getElementById("hidden-content").className = "slideUp";
         }
       }
       </script>
       
-      <div class="container">
+      <div class="container" id="hidden-content" style="background-color:black">
       
       {{ content }}
       
