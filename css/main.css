@@ -39,7 +39,6 @@ p {
         height: 10%;
         left: 0;
         position: fixed; 
-        background-color: transparent;
     }
 .fixed-header{
     top: 0;
