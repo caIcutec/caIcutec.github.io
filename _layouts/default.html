@@ -136,15 +136,14 @@
       function adjustForScroll() {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
           document.getElementById("hidden-content").removeAttribute("slideDown")
-          document.getElementById("hidden-content").setAttribute("id","slideUp");
+          document.getElementById("hidden-content").setAttribute("slideUp");
         } else {
           document.getElementById("hidden-content").removeAttribute("slideUp")
-          document.getElementById("hidden-content").setAttribute("id","slideDown");
+          document.getElementById("hidden-content").setAttribute("slideDown");
         }
         
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-          document.getElementById("clear").setAttribute("id","makeOpaque");
-        } else {
+          document.getElementById("clear").setAttribute("makeOpaque");
         }
       }
       </script>
