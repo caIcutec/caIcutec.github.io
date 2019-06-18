@@ -69,7 +69,6 @@
       animation-duration: 1s; 
       -webkit-animation-duration: 1s; 
       visibility: visible;
-      animation-fill-mode:forwards;
     }
     @keyframes makeOpaque {
       0% {
@@ -140,7 +139,11 @@
         }
         
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-          document.getElementById("clear").setAttribute("id","makeOpaque");
+          document.getElementById("clear").style.animationFillMode = "forwards";
+          document.getElementById("clear").id="makeOpaque");
+        } else {
+          document.getElementById("makeOpaque").style.animationFillMode = "backwards";
+          document.getElementById("makeOpaque").id="clear");
         }
       }
       </script>
