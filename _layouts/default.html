@@ -66,19 +66,17 @@
           background-color: #000000;
         }
       }
-        /*
-      @-webkit-keyframes slideDown {
+      @-webkit-keyframes makeOpaque {
         0% {
-          opacity: 1;
-          -webkit-transform: translateY(0%);
+          opacity: 0;
+          background-color: #000000;
         } 
         100% {
-          opacity: 0;
-          -webkit-transform: translateY(70%);
+          opacity: 1;
+          background-color: #000000;
         }
       }
-        */
-    </style>
+     </style>
     
     <!-- IMPORTING SPECTRAL FONT, MAIN.CSS -->
     <head>
@@ -117,12 +115,18 @@
       </nav>
       
       <script>
-      window.onscroll = function() {myFunction()};
-      function myFunction() {
+      window.onscroll = function() {adjustForScroll()};
+      function adjustForScroll() {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
           document.getElementById("hidden-content").className = "slideUp";
         } else {
           document.getElementById("hidden-content").className = "slideDown";
+        }
+        
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          document.getElementById("fixed-header").className = "makeOpaque";
+        } else {
+          document.getElementById("fixed-header").className = "makeOpaque";
         }
       }
       </script>
