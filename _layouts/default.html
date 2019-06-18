@@ -133,13 +133,15 @@
       window.onscroll = function() {adjustForScroll()};
       function adjustForScroll() {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-          document.getElementById("hidden-content").setAttribute("slideUp");
+          document.getElementById("hidden-content").removeAttribute("id");
+          document.getElementById("hidden-content").setAttribute("id","slideUp");
         } else {
-          document.getElementById("hidden-content").setAttribute("slideDown");
+          document.getElementById("hidden-content").removeAttribute("id");
+          document.getElementById("hidden-content").setAttribute("id","slideDown");
         }
         
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-          document.getElementById("clear").setAttribute("makeOpaque");
+          document.getElementById("clear").setAttribute("id","makeOpaque");
         }
       }
       </script>
