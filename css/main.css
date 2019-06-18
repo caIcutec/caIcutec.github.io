@@ -27,6 +27,10 @@ p {
     color: #000000;
 }
 
+#opaque{
+    opacity:1;
+}
+
 .container{
     top:40%;
     width: 90%;
@@ -34,25 +38,24 @@ p {
     background-color: #ffffff;
 }
 
-.fixed-header, .fixed-footer{
+fixed-header, .fixed-footer{
         width: 100%;
         height: 10%;
         left: 0;
         position: fixed; 
         background-color: transparent;
     }
-.fixed-header{
+fixed-header{
     top: 0;
     padding: 0px;
     list-style: none;
-        
 }
-.fixed-footer{
+fixed-footer{
     bottom: 0;
     text-align:center;
 } 
 
-.icon-flex{
+icon-flex{
     top:0px;
     display:flex;
     flex-direction:row;
