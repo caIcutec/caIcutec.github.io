@@ -13,7 +13,6 @@
       -webkit-animation-duration: 2s; 
       visibility: visible;
       animation-fill-mode: forward;
-      animation-delay: 1s;
     }
     @keyframes slideUp {
       0% {
@@ -38,12 +37,12 @@
       
     .slideDown {
       animation-name: slideDown; 
-      webkit-animation-name: slideDown; 
       animation-duration: 2s; 
-      -webkit-animation-duration: 2s; 
       visibility: visible;
-      animation-delay: 1s;
       animation-fill-mode:forward;
+      -webkit-animation-duration: 2s; 
+      webkit-animation-name: slideDown; 
+
     }
     @keyframes slideDown {
       0% {
@@ -74,6 +73,7 @@
       animation-duration: 1s; 
       -webkit-animation-duration: 1s; 
       visibility: visible;
+      animation-fill-mode: forward;
     }
     @keyframes makeOpaque {
       0% {
@@ -95,10 +95,6 @@
         background-color: #000000;
       }
     }
-      
-      #hidden-content{
-        opacity:0;
-      } 
      </style>
     
     <!-- IMPORTING SPECTRAL FONT, MAIN.CSS -->
@@ -161,7 +157,7 @@
       {{ content }}
       
       </div>
-      <div class="container" id="hidden-content">
+      <div class="container" id="hidden-content" style="opacity:0">
       
       {{ content }}
       
