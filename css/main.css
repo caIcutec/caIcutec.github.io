@@ -29,8 +29,13 @@ p {
 }
 
 .container, .hidden-container{
-    right:5%;
     width: 90%;
+    left:5%;
+    right:5%;
+    padding-top:10px;
+        padding-bottom:10px;
+        padding-right:25px;
+        padding-left:25px;
     background-color: #ffffff;
 }
 
@@ -48,6 +53,7 @@ p {
     top: 0;
     padding: 0px;
     list-style: none;
+    text-align:center;
 }
 .fixed-footer{
     bottom: 0;
