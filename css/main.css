@@ -3,7 +3,6 @@
 body {
     width: 100%;
     top:10%;
-    padding-top:40%;
     background-size: 100% auto;
     background-attachment: fixed;
     /*background:url("../imgs/bg.jpg");*/
@@ -83,6 +82,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top:40%;
 
 }
 .bgimg-1 {
