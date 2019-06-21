@@ -42,7 +42,7 @@
       window.onscroll = function() {adjustForScroll()};
         
         function adjustForScroll() {
-          if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
             document.getElementById("hidden-content").classList.remove("slideDown");
             document.getElementById("hidden-content").classList.add("slideUp");
           } else {
@@ -62,8 +62,6 @@
         {{ content }}
         </div>
       </div>
-      
-      <div style="width:100%;background-color:#ffffff;color:#000000;text-align:center;height:50px>hello</div>
 
       <div class="bgimg-2">
         <div class="container" id="hidden-content" style="opacity:0">
