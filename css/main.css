@@ -59,6 +59,7 @@ p {
     padding: 0px;
     list-style: none;
     text-align:center;
+    z-index:1;
 }
 .fixed-footer{
     bottom: 0;
