@@ -6,7 +6,6 @@ body {
     background-size: 100% auto;
     background-attachment: fixed;
     /*background:url("../imgs/bg.jpg");*/
-    padding-top:25%;
 }
 
 a {
@@ -87,14 +86,14 @@ p {
 .bgimg-1 {
   background-image: url("../imgs/bg_para_1.jpg");
   min-height: 100%;
-  padding-top:40%;
-  padding-bottom:40%;
+  padding-top:30%;
+  padding-bottom:20%;
 }
 
 .bgimg-2 {
   background-image: url("../imgs/bg_para_2.jpg");
-  padding-top:40%;
-  padding-bottom:40%;
+  padding-top:20%;
+  padding-bottom:20%;
   min-height: 400px;
 }
 
