@@ -1,20 +1,17 @@
 <!DOCTYPE html>
   <html>
-    
-    <!-- IMPORTING FONTAWESOME ICONS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
-    
-    <!-- IMPORTING SPECTRAL FONT, MAIN.CSS -->
+
+    <!-- to put in head.html -->
     <head>
+      <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
       <link href="https://fonts.googleapis.com/css?family=Spectral&display=swap" rel="stylesheet">
       <title>{{ page.title}}</title>
       <link rel="stylesheet" type="text/css" href="/css/main.css">
     </head>
     
-    
-    <!-- TOP LINKS -->
     <body background="/imgs/bg.jpg" id="bg" style="padding-top:25%">
-      
+    
+    <!-- TOP LINKS to put in header.html -->  
       <nav>
       <div class="fixed-header" id="clear">
         <a href="/" style="font-size:1.5em">home</a>
@@ -40,6 +37,7 @@
       </div>
       </nav>
       
+      <!-- scrolly script -->
       <script>
       window.onscroll = function() {adjustForScroll()};
         
@@ -56,22 +54,15 @@
             document.getElementById("clear").classList.add("makeOpaque");	 
           }
         }
-        
       </script>
       
+      
+      
       <div class="container" id="content">
-      
       {{ content }}
-      
       </div>
       <div class="container" id="hidden-content" style="opacity:0">
-      
       {{ content }}
-      
-      </div>
-      
-      <div class="fixed-footer">
-      
-    </div>
-  </body>
+      </div>     
+   </body>
 </html>
