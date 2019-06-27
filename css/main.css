@@ -32,8 +32,7 @@ p {
 
 .container, .hidden-container{
     width: 90%;
-    left:5%;
-    right:5%;
+    margin:auto;
     padding-top:10px;
         padding-bottom:10px;
         padding-right:25px;
