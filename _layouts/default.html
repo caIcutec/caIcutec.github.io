@@ -4,8 +4,7 @@
     <!-- to put in head.html -->
     <head>
       <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
-      <link href="https://fonts.googleapis.com/css?family=Spectral&display=swap" rel="stylesheet">
-      <title>{{page.title}}</title>
+      <title>Jack Yang</title>
       <link rel="stylesheet" type="text/css" href="/css/main.css">
     </head>
     
@@ -13,28 +12,47 @@
     
     <!-- TOP LINKS to put in header.html -->  
       <nav>
-      <div class="fixed-header" id="clear">
-        <a href="/">home</a>
-        <a href="/about">		about</a>
-        <a href="/design"> 	 design</a>
-        <div class="icon-flex">
-          <a href="mailto:jayang@ucsd.edu">
-      	  <span class="fa-stack fa-lg">
-          	<i class="fas fa-envelope-square fa-stack-2x"></i>
-      	  </span>
-   		    </a>
-    	    <a href="https://github.com/caicutec">
-      	    <span class="fa-stack fa-lg">
-            	<i class="fab fa-github-square fa-stack-2x"></i>
-         	</span>
-        	</a>
-          <a href="#">
-          	<span class="fa-stack fa-lg">
-           	  <i class="fa fa-plus fa-stack-2x"></i>
-          	</span>
-    	    </a>
+        <div class="fixed-header" id="clear">
+          <!--
+          <a href="/">home</a>
+          <a href="/about">		about</a>
+          <a href="/design"> 	 design</a>
+          -->
+          <div class="icon-flex">
+            <flex-elt href="mailto:jayang@ucsd.edu">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-envelope-square fa-stack-2x"></i>
+              </span>
+             </flex-elt>
+            <flex-elt href="https://github.com/caicutec">
+              <span class="fa-stack fa-lg">
+                <i class="fab fa-github-square fa-stack-2x"></i>
+              </span>
+            </flex-elt>
+            <flex-elt href="https://devpost.com/caicutec">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-code fa-stack-2x"></i>
+              </span>
+            </flex-elt>
+            <flex-elt>
+            <input type="checkbox" id="chk">
+              <label for="chk" class="show-menu" style:"right:0">
+                  <i class="fa fa-bars fa-stack-2x"></i>
+              </label>
+              <ul class="menu">
+                <a href="/">home</a>
+                <a href="/about">about</a>
+                <a href="/design">projects</a>
+                <a href="/design">designs</a>
+                <a href="/design">contacts</a>
+                <label for="chk" class="hide-menu">
+                  <i class="fas fa-times fa-stack-2x"></i>
+                </label>        
+              </ul>
+            </flex-elt>
+          </div> 
+        
         </div>
-      </div>
       </nav>
       
       <!-- scrolly script -->
@@ -58,16 +76,24 @@
       
       
       <div class="bgimg-1">
-        <div class="container" id="content">
-        {{ content }}
-        </div>
+        	<div class="img-text">
+        	<h1>Hi, I'm Jack</h1>
+		      <p>I am a ... Web Developer</p>
+          </div>
       </div>
     <div class="container" id="content">
-        {{ content }}
+      <h1>About Me</h1>
+		    <p>I'm a software developer and graphic designer based in California. I am currently a second year university student studying at UCSD, pursuing a B.S. in Computer Science. Many of my passions include web development, CTF tournaments, hackathons, reading, drawing, and graphic design!</p>
+  	</div>
+
         </div>
       <div class="bgimg-2">
         <div class="container" id="hidden-content" style="opacity:0">
-        {{ content }}
+        	<div class="design">
+        	<h1>Graphic Design</h1>
+		<p>Here's some of the graphic designs I've made in the past, for campus clubs, events at UCSD, and as a hobby!</p>
+  	</div>
+
         </div>     
       </div>
    </body>
