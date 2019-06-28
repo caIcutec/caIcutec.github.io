@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo|Lato|Spectral&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Spectral&display=swap");
 
 body {
     width: 100%;
-    top:10%;
     background-size: 100% auto;
     background-attachment: fixed;
     /*background:url("../imgs/bg.jpg");*/
@@ -20,14 +20,13 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family: 'Spectral', serif;
-    text-alignment: center;
-    color: #000000;
+    line-height: 0.1em;
 }
 
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #000000;
+    font-size: 1em;
+    font-family: 'Archivo', sans-serif;
+  font-style: italic;
 }
 
 .container, .hidden-container{
@@ -44,54 +43,135 @@ p {
     opacity: 0;
 }
 
-.fixed-header, .fixed-footer{
-        width: 100%;
-        height: 10%;
-        left: 0;
-        position: fixed; 
-    }
-.fixed-header{
-    top: 0;
-    padding: 0px;
-    list-style: none;
-    text-align:center;
-    z-index:1;
+.img-text{
+  color: #ffffff;
+  font-size:2em;
+  text-align:center;
 }
-.fixed-footer{
-    bottom: 0;
-    text-align:center;
-} 
+
+.fixed-header{
+  width: 100%;
+  height: 15%;
+  left: 0;
+  position: fixed; 
+  top: 0px;
+  padding: 0px;
+  list-style:none;
+  text-align:right;
+  z-index:1;
+}
 
 .icon-flex{
     top:0px;
+    width:200px;
     display:flex;
     flex-direction:row;
     justify-content: flex-end;
     align-items: flex-start;
+    display:inline-block;
 }
+
+.flex_elt{
+  color:#fff;
+  line-height:100px;
+}
+
+.menu{
+  float:right;
+  line-height:100px;
+}
+.menu a{
+  color: #fff;
+  text-transform:lowercase;
+  text-decoration:none;
+  font-family: 'Archivo', sans-serif;
+  font-style:italic;
+  padding: 0 10px;
+  transition:0.4s;
+}
+
+.show-menu, .hide-menu{
+  transition:0.4s;
+  color:#fff;
+  cursor:pointer;
+  display:none;
+}
+
+.show-menu{
+  float:right;
+}
+
+.show-menu i{
+  line-height:100px;
+}
+
+.menu a:hover,
+.show-menu:hover,
+.hide-menu:hover{
+  color: #db23db;
+}
+
+#chk{
+  position:absolute;
+  visibility:hidden;
+  z-index:-1111;
+}
+
+@media screen and (max-width:3000px){
+  .show-menu, .hide-menu{
+    display: block;
+  }
+  .menu{
+    position:fixed;
+    width:40%;
+    height:100vh;
+    background:#333;
+    right:-100%;
+    top:0;
+    text-align:center;
+    padding:80px 0;
+    line-height:normal;
+    transition:0.7s;
+  }
+
+  .menu a{
+    display:block;
+    padding:20px;
+  }
+
+  .hide-menu{
+    position:absolute;
+    top:40px;
+    right:40px;
+  } 
+  #chk:checked ~ .menu{
+    right:0
+  }
+}
+
 
     /* PARALLAX FUNTIMES: https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm */
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
-  opacity: 0.65;
+  opacity:.70;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  color:white;
 }
 .bgimg-1 {
-  background-image: url("../imgs/bg_para_1.jpg");
-  min-height: 100%;
-  padding-top:30%;
-  padding-bottom:20%;
+  background-image: url("https://3iqhm91wtiv21y4zza4dqwj2-wpengine.netdna-ssl.com/wp-content/uploads/California-San-Diego-Skyline-Sailboats-San-Diego-Bay-1440x968.jpg");
+  min-height: 100vh;
+  padding-top:10%;
+  padding-bottom:10%;
 }
 
 .bgimg-2 {
-  background-image: url("../imgs/bg_para_2.jpg");
-  padding-top:20%;
-  padding-bottom:20%;
+  background-image: url("https://s-ec.bstatic.com/images/hotel/max1024x768/131/131385927.jpg");
+  padding-top:10%;
+  padding-bottom:10%;
   min-height: 400px;
 }
 
