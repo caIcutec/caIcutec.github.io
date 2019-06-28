@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Spectral&display=swap");
 
 body {
+    margin:0;
     width: 100%;
     background-size: 100% auto;
     background-attachment: fixed;
@@ -11,10 +12,6 @@ body {
 a {
     text-decoration: none;
     color: #ffffff;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 h1 {
@@ -51,7 +48,7 @@ p {
 
 .fixed-header{
   width: 100%;
-  height: 15%;
+  height: 50px;
   left: 0;
   position: fixed; 
   top: 0px;
@@ -78,6 +75,7 @@ p {
 
 .menu{
   float:right;
+  margin:0;
   line-height:100px;
 }
 .menu a{
@@ -123,7 +121,7 @@ p {
   }
   .menu{
     position:fixed;
-    width:40%;
+    width:20%;
     height:100vh;
     background:#333;
     right:-100%;
@@ -136,6 +134,7 @@ p {
 
   .menu a{
     display:block;
+    font-size:20px;
     padding:20px;
   }
 
@@ -164,14 +163,14 @@ p {
 .bgimg-1 {
   background-image: url("https://3iqhm91wtiv21y4zza4dqwj2-wpengine.netdna-ssl.com/wp-content/uploads/California-San-Diego-Skyline-Sailboats-San-Diego-Bay-1440x968.jpg");
   min-height: 100vh;
-  padding-top:10%;
-  padding-bottom:10%;
+  padding-top:15%;
+  padding-bottom:0%;
 }
 
 .bgimg-2 {
   background-image: url("https://s-ec.bstatic.com/images/hotel/max1024x768/131/131385927.jpg");
   padding-top:10%;
-  padding-bottom:10%;
+  padding-bottom:0%;
   min-height: 400px;
 }
 
