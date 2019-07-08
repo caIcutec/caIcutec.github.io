@@ -12,50 +12,44 @@
     
     <!-- TOP LINKS to put in header.html -->  
       <nav>
-        <div class="fixed-header" id="clear">
-          <!--
-          <a href="/">home</a>
-          <a href="/about">		about</a>
-          <a href="/design"> 	 design</a>
-          -->
-          <div class="icon-flex">
-            <a href="mailto:jayang@ucsd.edu">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-envelope-square fa-stack-2x fa-inverse"></i>
-              </span>
-            </a>
-            <a href="https://github.com/caicutec">
-              <span class="fa-stack fa-lg">
-                <i class="fab fa-github-square fa-stack-2x fa-inverse"></i>
-              </span>
-            </a>
-            <input type="checkbox" id="chk">
-              <label for="chk" class="show-menu">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-bars fa-stack-2x" ></i>
-                </span>
-              </label>
-              <ul class="menu">
-                <a href="/">home</a>
-                <a href="/about">about</a>
-                <a href="/design">projects</a>
-                <a href="/design">designs</a>
-                <a href="/design">contacts</a>
-                <label for="chk" class="hide-menu">
-                  <i class="fas fa-times fa-stack-2x"></i>
-                </label>        
-              </ul>
-          </div> 
-        
-        </div>
+        <div class="fixed-header" id="clear" style="background:rgb(46, 134, 193,0)"></div>
       </nav>
+
+      <input type="checkbox" id="chk">
+      <label for="chk" class="show-menu">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-bars fa-stack-2x" ></i>
+        </span>
+      </label>
+      
+      
+        <div class="menu">
+        
+        <a href="/">home</a>
+        <a href="#about">about</a>
+        <a href="/design">projects</a>
+        
+        <div class="icon-flex">
+          <a href="mailto:jayang@ucsd.edu">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-envelope-square fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+          <a href="https://github.com/caicutec">
+            <span class="fa-stack fa-lg">
+              <i class="fab fa-github-square fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </div>
+        
+      </div>
       
       <!-- scrolly script -->
       <script>
       window.onscroll = function() {adjustForScroll()};
         
         function adjustForScroll() {
-          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
             document.getElementById("hidden-content").classList.remove("slideDown");
             document.getElementById("hidden-content").classList.add("slideUp");
           } else {
@@ -63,33 +57,44 @@
             document.getElementById("hidden-content").classList.add("slideDown");
           }
         	        
-          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {	     
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            document.getElementById("clear").classList.remove("makeClear");
             document.getElementById("clear").classList.add("makeOpaque");	 
+          } else {
+            document.getElementById("clear").classList.remove("makeOpaque");
+            document.getElementById("clear").classList.add("makeClear");	 
           }
         }
       </script>
-      
-      
-      <div class="bgimg-1">
-        	<div class="img-text">
-        	<h1>Hi, I'm Jack</h1>
-		      <p>I am a ... Web Developer</p>
-          </div>
-      </div>
-    <div class="container" id="content">
-      <h1>About Me</h1>
-		    <p>I'm a software developer and graphic designer based in California. I am currently a second year university student studying at UCSD, pursuing a B.S. in Computer Science. Many of my passions include web development, CTF tournaments, hackathons, reading, drawing, and graphic design!</p>
-  	</div>
-
+      <div class = "movable-content">
+        <div class="bgimg-1">
+            <div class="img-text">
+            <h1>Hi, I'm Jack</h1><p>Aspiring Web Developer</p>
+            </div>
         </div>
-      <div class="bgimg-2">
-        <div class="img-text" id="hidden-content" style="opacity:0">
-        	<div class="design">
-        	<h1>Graphic Design</h1>
-		<p>Here's some of the graphic designs I've made in the past, for campus clubs, events at UCSD, and as a hobby!</p>
-  	</div>
 
-        </div>     
+        <div class="ak-container">
+          <section>
+            <div class="image-container" id="image-container-1">
+              <div class="overlay" id="overlay-1"></div>
+            </div>
+            <div class="text" id="text-1">{{ content }}</div>
+          </section>
+        </div>
+
+        <div class="bgimg-2">  
+          <div class="ak-container" id="hidden-content">
+            <section>          
+              <div class="text" id="text-1">
+                {{ content }}
+		</div>
+              <div class="image-container" id="image-container-1">
+                <div class="overlay" id="overlay-1"></div>
+              </div>
+            </section>  
+          </div>
+        </div>
       </div>
-   </body>
+      
+  </body>
 </html>
