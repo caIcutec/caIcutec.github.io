@@ -4,6 +4,10 @@
 body {
     margin:0;
     width: 100%;
+    height:100%;
+    padding-bottom:0;
+    top:0;
+    left:0;
     background-size: 100% auto;
     background-attachment: fixed;
     /*background:url("../imgs/bg.jpg");*/
@@ -17,13 +21,31 @@ a {
 h1 {
     font-size: 3em;
     font-family: 'Spectral', serif;
-    line-height: 0.1em;
+    line-height: 1.1em;
+    margin-bottom:0;
 }
 
 p {
     font-size: 1em;
     font-family: 'Archivo', sans-serif;
-  font-style: italic;
+    font-style: italic;
+    line-height:1.1em;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: 'Spectral', serif;
+    line-height: 1em;
+    color:#000;
+    margin-top:0;
+      margin-bottom:15px;
+}
+
+p2 {
+    font-size: 1.2em;
+    font-family: 'Archivo', sans-serif;
+    line-height:1.1em;
+    color:#000;
 }
 
 .container, .hidden-container{
@@ -48,35 +70,41 @@ p {
 
 .fixed-header{
   width: 100%;
-  height: 50px;
+  height: 75px;
   left: 0;
   position: fixed; 
-  top: 0px;
-  padding: 0px;
+  top: 0;
+  padding: 10px;
   list-style:none;
   text-align:right;
-  z-index:1;
+  z-index:2;
 }
 
 .icon-flex{
-    top:0px;
     width:200px;
+    height:50px;
+    padding-bottom:25px;
     display:flex;
     flex-direction:row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-start;
-    display:inline-block;
+}
+.icon-flex a{
+  float:left;
+  padding:0;
+  width:0px;
+  height:0px;
 }
 
 .flex_elt{
   color:#fff;
-  line-height:100px;
 }
 
 .menu{
   float:right;
   margin:0;
   line-height:100px;
+  z-index:1;
 }
 .menu a{
   color: #fff;
@@ -96,7 +124,12 @@ p {
 }
 
 .show-menu{
-  float:right;
+  float: right;
+  margin-left:96%;
+  position: fixed; 
+  padding-right:15px;
+  padding-top:15px;
+  z-index:3;
 }
 
 .show-menu i{
@@ -106,7 +139,7 @@ p {
 .menu a:hover,
 .show-menu:hover,
 .hide-menu:hover{
-  color: #db23db;
+  color:#F7DC6F;
 }
 
 #chk{
@@ -121,9 +154,9 @@ p {
   }
   .menu{
     position:fixed;
-    width:20%;
-    height:100vh;
-    background:#333;
+    width:20vh;
+    height:100%;
+    background:rgb(46, 134, 193,1);
     right:-100%;
     top:0;
     text-align:center;
@@ -141,12 +174,61 @@ p {
   .hide-menu{
     position:absolute;
     top:40px;
-    right:40px;
+    right:60px;
   } 
   #chk:checked ~ .menu{
-    right:0
+    right:0;
   }
 }
+
+
+
+.ak-container {
+  max-width: 800px;
+  margin: 100px auto 100px auto;
+  background: white;
+  @media (max-width: 900px) {
+    width: 400px;
+  }
+}
+section {
+  display: flex;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    &:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.text {
+ padding: 10px 60px;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.image-container {
+  background: gold;
+  min-width: 400px;
+  min-height: 400px;
+}
+
+.overlay {
+  background: slateblue;
+  width: 100%;
+  height: 100%;
+}
+
+#overlay-1 {
+  background: url("https://static.stereogum.com/uploads/2015/09/thenils-noweaknesses-640x640.jpg");
+}
+
+#image-container-1 {
+  background: url("https://static.stereogum.com/uploads/2015/09/thenils-noweaknesses-640x640.jpg");
+}
+
+
 
 
     /* PARALLAX FUNTIMES: https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm */
@@ -158,19 +240,19 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color:white;
+  
 }
 .bgimg-1 {
   background-image: url("https://3iqhm91wtiv21y4zza4dqwj2-wpengine.netdna-ssl.com/wp-content/uploads/California-San-Diego-Skyline-Sailboats-San-Diego-Bay-1440x968.jpg");
-  min-height: 100vh;
+  min-height: 80vh;
   padding-top:15%;
   padding-bottom:0%;
 }
 
 .bgimg-2 {
   background-image: url("https://s-ec.bstatic.com/images/hotel/max1024x768/131/131385927.jpg");
-  padding-top:10%;
-  padding-bottom:0%;
+  padding-top: 20px;
+  padding-bottom:20px;
   min-height: 400px;
 }
 
@@ -247,20 +329,50 @@ p {
     @keyframes makeOpaque {
       0% {
         opacity: 0;
-        background-color: #000000;
+        background:rgb(46, 134, 193,0)
       } 
       100% {
         opacity: 1;
-        background-color: #000000;
+        background:rgb(46, 134, 193,1)
       }
     }
     @-webkit-keyframes makeOpaque {
       0% {
         opacity: 0;
-        background-color: #000000;
+        background:rgb(46, 134, 193,0)
       } 
       100% {
         opacity: 1;
-        background-color: #000000;
+        background:rgb(46, 134, 193,1)
+      }
+    }
+
+    .makeClear {
+      top:0; padding:0px; list-style:none;
+      animation-name: makeClear; 
+      webkit-animation-name: makeClear; 
+      animation-duration: 1s; 
+      -webkit-animation-duration: 1s; 
+      visibility: visible;
+      animation-fill-mode: forwards;
+    }
+    @keyframes makeClear {
+      0% {
+        opacity: 1;
+        background:rgb(46, 134, 193,1)
+      } 
+      100% {
+        opacity: 0;
+        background:rgb(46, 134, 193,0)
+      }
+    }
+    @-webkit-keyframes makeClear {
+      0% {
+        opacity: 1;
+        background:rgb(46, 134, 193,1)
+      } 
+      100% {
+        opacity: 0;
+        background:rgb(46, 134, 193,0)
       }
     }
