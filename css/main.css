@@ -14,6 +14,25 @@ body {
     overflow-y:auto;
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Spectral', serif;
+    line-height: 1.1em;
+    margin-bottom:0;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Archivo', sans-serif;
+    font-style: italic;
+    line-height:1.1em;
+}
+
 h2 {
     font-size: 3em;
     font-family: 'Spectral', serif;
@@ -86,7 +105,7 @@ p2 {
   right:0;
   z-index:0;
   overflow: auto; 
-  background-image: url("https://i1.wp.com/themq.org/wp-content/uploads/2019/05/MILTIMOREpolio.jpg");
+  background-image: url("https://cdn.trolleytours.com/wp-content/uploads/2018/02/san-diego-cityscape-night.jpg");
 }
 
 .movable-img::-webkit-scrollbar { width: 0 !important }
