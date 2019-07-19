@@ -20,17 +20,17 @@ a {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1em;
     font-family: 'Spectral', serif;
     line-height: 1.1em;
     margin-bottom:0;
 }
 
 p {
-    font-size: 1em;
+    font-size: 0.5em;
     font-family: 'Archivo', sans-serif;
     font-style: italic;
-    line-height:1.1em;
+    line-height:0.6em;
 }
 
 h2 {
