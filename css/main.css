@@ -20,7 +20,7 @@ a {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Spectral', serif;
     line-height: 1.1em;
     margin-bottom:0;
@@ -34,7 +34,7 @@ p {
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Spectral', serif;
     line-height: 1em;
     color:#000;
@@ -105,7 +105,8 @@ p2 {
   right:0;
   z-index:0;
   overflow: auto; 
-  background-image: url("https://cdn.trolleytours.com/wp-content/uploads/2018/02/san-diego-cityscape-night.jpg");
+  background-image: url("https://cdn.vox-cdn.com/thumbor/C7ddh7Idh3Aa0yA91xQUf5GwGWE=/0x0:2000x1333/1200x800/filters:focal(840x507:1160x827)/cdn.vox-cdn.com/uploads/chorus_image/image/60793985/171109_07_08_31_5DR21719.0.jpg")
+  ;background-size: cover;
 }
 
 .movable-img::-webkit-scrollbar { width: 0 !important }
