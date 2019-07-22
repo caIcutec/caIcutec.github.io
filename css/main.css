@@ -27,12 +27,12 @@ h1 {
 }
 
 p {
-    font-size: 0.5em;
+    font-size: 0.25em;
     font-family: 'Archivo', sans-serif;
     font-style: italic;
     line-height:1em;
     margin:auto;
-    width:50%;
+    width:40%;
 }
 
 h2 {
