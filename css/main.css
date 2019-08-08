@@ -52,7 +52,7 @@ p2 {
 }
 
 .container, .hidden-container{
-    width: 90%;
+    width: 70%;
     margin:auto;
     padding-top:10px;
         padding-bottom:10px;
@@ -67,13 +67,14 @@ p2 {
 
 .img-text{
   color: #ffffff;
-  font-size:2em;
+  font-size:3em;
   text-align:center;
+  top:0;
 }
 
 .icon-flex{
     margin:auto;
-    width:200px;
+    width:165px;
     height:50px;
     padding-bottom:25px;
     display:flex;
@@ -259,4 +260,14 @@ p2 {
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+#wheel{
+  animation-name: wheel-spin;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+@keyframes wheel-spin {
+  0% {transform: rotate(0deg)}
+  100%{transform:rotate(360deg)}
 }

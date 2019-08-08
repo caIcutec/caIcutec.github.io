@@ -2,7 +2,36 @@
 layout: default
 title: Jack Yang
 ---
-<div class="about">
-	<h1>Site Under Construction!</h1>
-	<p>Hi, I'm Jack Yang. I'm currently working to create a site with github pages to display my projects! While this is being built, feel free to visit links in the side menu to view some of my work!</p>
+<div style="margin-top:20%">
+	<div style="margin-right:40%">
+		<h1>Jack Yang</h1>
+		<p id="subtitle"></p>
+	</div>
+	<img src="imgs/icon.png" style="position:absolute;margin-top:-10.5%;margin-left:12.5%;height:20%;z-index:3;"></img>
+	<img id="wheel" src="imgs/iconwheel.png" style="display:inline-block;height:60%;position:absolute; margin-top:-22%;margin-left:-0.5%"></img>
+
+	<script>
+		var i = 0;
+		var j = 0;
+		var titles = ['Software Engineer','Web Developer','Multimedia Artist','CTF Enthusiast','Aspiring Designer','NaN                ... Just kidding :)','Literature Buff','Magazine Editor']; /* The text */
+		var speed = 50; /* The speed/duration of the effect in milliseconds */
+		var currentTitle = titles[j];
+
+		function typeWriter() {
+			if (i < currentTitle.length) {
+				document.getElementById("subtitle").innerHTML += currentTitle.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+			} else {
+				i = 0;
+				j = (j+1) % titles.length;
+				console.log(titles[j]);
+				currentTitle = titles[j];
+				setTimeout(function(){document.getElementById("subtitle").innerHTML = "";}, 3000);
+				setTimeout(typeWriter,3000);
+			}
+		}
+
+		typeWriter();
+	</script>
 </div>
