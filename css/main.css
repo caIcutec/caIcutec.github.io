@@ -261,13 +261,3 @@ p2 {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-
-#wheel{
-  animation-name: wheel-spin;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-}
-@keyframes wheel-spin {
-  0% {transform: rotate(0deg)}
-  100%{transform:rotate(360deg)}
-}

@@ -10,6 +10,18 @@ title: Jack Yang
 	<img src="imgs/icon.png" style="position:absolute;margin-top:-10.5%;margin-left:12.5%;height:20%;z-index:3;"></img>
 	<img id="wheel" src="imgs/iconwheel.png" style="display:inline-block;height:60%;position:absolute; margin-top:-22%;margin-left:-0.5%"></img>
 
+	<style>				
+		#wheel{
+		animation-name: wheel-spin;
+		animation-duration: 60s;
+		animation-iteration-count: infinite;
+		}
+		@keyframes wheel-spin {
+		0% {transform: rotate(0deg)}
+		100%{transform:rotate(360deg)}
+		}
+	</style>
+
 	<script>
 		var i = 0;
 		var j = 0;
