@@ -19,14 +19,14 @@ a {
     color: #ffffff;
 }
 
-h1 {
+#title {
     font-size: 1em;
     font-family: 'Spectral', serif;
     line-height: 1.1em;
     margin-bottom:0;
 }
 
-p {
+#subtitle {
     font-size: 0.25em;
     font-family: 'Archivo', sans-serif;
     font-style: italic;
