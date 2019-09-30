@@ -1,20 +1,16 @@
 <!DOCTYPE html>
   <html>
-
-    <!-- to put in head.html -->
     <head>
       <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
-      <title></title>
+      <title>Jack Yang</title>
+      <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico"/>
       <link rel="stylesheet" type="text/css" href="/css/main.css">
-      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.css">
     </head>
     <input type="checkbox" id="chk">
    
-      <label for="chk" class="show-menu menuBtn type1"><span><!--
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-bars fa-stack-2x" ></i>
-        </span>--></span>
+      <label for="chk" class="show-menu menuBtn type1"><span></span>
       </label>
       <div class="menu">
         
@@ -52,5 +48,12 @@
       $('.menuBtn').on('click', function(){
         $(this).toggleClass('close');
       });
+      /*
+      $('#about').on('mouseover', function(){
+        var x = document.getElementsByClassName('overlay-img');
+        $(x[0]).addClass('overlaid');
+        $(x[0]).removeClass('under-img');
+      });
+      */
     </script>
     </body>

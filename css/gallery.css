@@ -1,10 +1,27 @@
 .container{
-  width: 200%;;
-  height:auto;
-  margin:auto;
+  width:630px;
+  height:680px;
   padding-top:10px;
   padding-left:10px;
   background-color:#fff;
+  text-align:center;
+  position:relative;
+}
+
+#mq{
+  margin-left:60px;
+}
+
+#acm{
+  margin-left:720px;
+  margin-top:-688px;
+}
+
+.container h1{
+  font-size:30px;
+  line-height:0.25em;
+  font-family: 'Archivo', sans-serif;
+  color: #000;
 }
 
 .flex {
@@ -26,8 +43,8 @@
 .thumbnail {
   position: relative;
   top:0px;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   margin-right:10px;
   margin-bottom:10px;
   overflow: hidden;
@@ -35,8 +52,8 @@
 
 .thumbnail-med {
   position: relative;
-  width: 310px;
-  height: 310px;
+  width: 410px;
+  height: 410px;
   margin-right:10px;
   margin-bottom:10px;
   overflow: hidden;
@@ -44,26 +61,43 @@
 
 .thumbnail-lorge {
   position: relative;
-  width: 470px;
-  height: 470px;
+  width: 620px;
+  height: 620px;
   margin-right:10px;
   margin-bottom:10px;
   overflow: hidden;
 }
 
 .thumbnail a img {
-  position: absolute;
+  position: relative;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 a:hover{
   opacity:0.8;
-  transform: rotate(15deg);
   transition:0.4s;
 }
+/*
+img:hover {
+  animation: rotate-img .5s linear 1;
+  animation-direction: forwards;
+  -webkit-animation: rotate-img .5s linear 1;
+}
 
+@keyframes rotate-img {
+  0% {
+    transform-origin:inherit;
+    transform: rotate(0);
+  }
+  100% {
+    transform-origin:inherit;
+    transform: rotate(-5deg);
+  }
+}
 
+*/
 
-#img1 {  
+#mq1 {  
   left: 50%;
   top: 50%;
   height: 100%;
@@ -71,15 +105,15 @@ a:hover{
   -webkit-transform: translate(-25%,-0%);-ms-transform: translate(-25%,-0%);transform: translate(-25%,-0%);
 }
 
-#img2 {  
-  left: -0%;
-  top: -20%;
-  height: 140%;
+#mq2 {  
+  left: 50%;
+  top: 50%;
+  height: 100%;
   width: auto;
-  -webkit-transform: translate(0%,0%);-ms-transform: translate(0%,0%);transform: translate(0%,0%);
+  -webkit-transform: translate(-40%,-50%);-ms-transform: translate(-40%,-50%);transform: translate(-40%,-50%);
 }
 
-#img3 {  
+#mq3 {  
   left: 50%;
   top: 50%;
   height: 130%;
@@ -87,23 +121,23 @@ a:hover{
   -webkit-transform: translate(-30%,-50%);-ms-transform: translate(-30%,-50%);transform: translate(-30%,-50%);
 }
 
-#img4 {  
-  left: 0%;
-  top: 0%;
-  width: 104%;
+#mq4 {  
+  left: 50%;
+  top: 50%;
+  width: 105%;
   height: auto;
-  -webkit-transform: translate(-2%,0%);-ms-transform: translate(-2%,0%);transform: translate(-2%,0%);
+  -webkit-transform: translate(-2.5%,0%);-ms-transform: translate(-2.5%,0%);transform: translate(-2.5%,0%);
 }
 
-#img5 {  
-  left: 7%;
+#mq5 {  
+  left: 65%;
   top: 0%;
-  height: 110%;
+  height: 180%;
   width: auto;
   -webkit-transform: translate(-25%,-0%);-ms-transform: translate(-25%,-0%);transform: translate(-25%,-0%);
 }
 
-#img6 {  
+#mq6 {  
   left: 0%;
   top: 0%;
   height: 100%;
@@ -111,23 +145,7 @@ a:hover{
   -webkit-transform: translate(0%,-0%);-ms-transform: translate(0%,-0%);transform: translate(0%,-0%);
 }
 
-#img7 {  
-  left: -5%;
-  top: 0%;
-  height: 120%;
-  width: auto;
-  -webkit-transform: translate(0%,-0%);-ms-transform: translate(0%,-0%);transform: translate(0%,-0%);
-}
-
-#img8 {  
-  left: -35%;
-  top: -15%;
-  height: 120%;
-  width: auto;
-  -webkit-transform: translate(0%,-0%);-ms-transform: translate(0%,-0%);transform: translate(0%,-0%);
-}
-
-#img0 {  
+#mq0 {  
   left: 00%;
   top: 00%;
   height: 100%;
@@ -135,7 +153,7 @@ a:hover{
   -webkit-transform: translate(-15%,-0%);-ms-transform: translate(-15%,-0%);transform: translate(-15%,-0%);
 }
 
-#img10 {  
+#mq10 {  
   left: 00%;
   top: 00%;
   height: 160%;
@@ -143,7 +161,35 @@ a:hover{
   -webkit-transform: translate(-1%,-1%);-ms-transform: translate(-1%,-1%);transform: translate(-1%,-1%);
 }
 
-.thumbnail img.portrait {
+#mq8 {  
+  left: -70%;
+  top: 00%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-1%,-1%);-ms-transform: translate(-1%,-1%);transform: translate(-1%,-1%);
+}
+
+#mq9 {  
+  left: -30%;
+  top: 00%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-1%,-1%);-ms-transform: translate(-1%,-1%);transform: translate(-1%,-1%);
+}
+
+#img1{
+  height:100%;
+  width:auto;
+  margin-left:-75px;
+}
+
+#img2{
+  height:110%;
+  width:auto;
+  margin-left:-180px;
+}
+
+.thumbnail img{
   width: 100%;
   height: auto;
 }

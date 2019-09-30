@@ -27,7 +27,17 @@ h2 {
     margin-top:0;
       margin-bottom:15px;
 }
-
+	
+#wheel{
+  animation-name: wheel-spin;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  }
+  @keyframes wheel-spin {
+  0% {transform: rotate(0deg)}
+  100%{transform:rotate(360deg)}
+  }
+  
 #title {
   font-size: 1em;
   font-family: 'Spectral', serif;
@@ -42,6 +52,68 @@ h2 {
   line-height:1em;
   margin:auto;
   width:40%;
+}
+
+#about {
+  padding:25px;
+  padding-bottom:0;
+  text-align:left;
+  width:80%;
+  height:275px;
+  background-color:white;
+  margin:auto;
+  border-radius: 20px;
+  margin-top: 400px
+}
+
+.img-container{
+  width:250px;
+  height:250px;
+  padding:0;
+  padding-top:-5px;
+  position:absolute;
+  border-radius: 20px;
+  overflow:hidden;
+  background-image:url("../imgs/me.jpg");
+  background-size: 250px 250px;
+  clip-path: circle(50% at 50% 50%);
+  transition: all .5s ease-in-out;
+}
+
+#about:hover .img-container{
+  clip-path: circle(200% at 50% 0%);
+  background-image:url("../imgs/me2.jpg");
+}
+
+#about h1{
+  font-size: 0.5em;
+  color: black;
+  font-family: 'Spectral';
+  line-height:0.75em;
+  margin-left:275px;
+  margin-bottom:0;
+  margin-top:10px;
+  width:40%;
+}
+
+#about p{
+  font-size:23px;
+  color: black;
+  font-family: 'Archivo',sans-serif;
+  line-height:1em;
+  margin-left:275px;
+  margin-top:20px;
+  margin-bottom:0;
+  width:auto;
+}
+
+#graphics {
+  margin:auto;
+  text-align:center;
+  font-family:'Spectral';
+  font-size: 0.5em;
+  line-height:1em;
+  margin-top:400px
 }
 
 .img-text{
