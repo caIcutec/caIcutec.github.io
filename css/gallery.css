@@ -189,6 +189,25 @@ img:hover {
   margin-left:-180px;
 }
 
+#img4{
+  height:160%;
+  width:auto;
+  margin-left:-05px;
+}
+
+#img5{
+  height:155%;
+  width:auto;
+  margin-top:-5px
+}
+
+#img6{
+  height:140%;
+  width:auto;
+  margin-left:-07.5px;
+  margin-top:-05px;
+}
+
 .thumbnail img{
   width: 100%;
   height: auto;
