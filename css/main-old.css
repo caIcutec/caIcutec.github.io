@@ -9,9 +9,15 @@ body {
     top:0;
     left:0;
     background-size: 100% auto;
-    background-attachment: fixed;
-    background-color:#333;
+    background-color:#fff;
     overflow-y:auto;
+}
+
+.wrapper{
+  color: #ffffff;
+  font-size:3em;
+  text-align:center;
+  top:0;
 }
 
 a {
@@ -116,12 +122,6 @@ h2 {
   margin-top:400px
 }
 
-.img-text{
-  color: #ffffff;
-  font-size:3em;
-  text-align:center;
-  top:0;
-}
 
 /* Menu Stuff */
 

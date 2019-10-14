@@ -4,56 +4,48 @@
       <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
       <title>Jack Yang</title>
       <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico"/>
-      <link rel="stylesheet" type="text/css" href="/css/main.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <link rel="stylesheet/less" type="text/less" href="/less/main.less" />
+      <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="/css/menu.css">
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
-    <input type="checkbox" id="chk">
-   
-      <label for="chk" class="show-menu menuBtn type1"><span></span>
-      </label>
-      <div class="menu">
-        
-        <a href="/">home</a>
-        <a href="/about">about</a>
-        <a href="https://stonks-io.firebaseapp.com">stonks.io</a>
-        <a href="https://github.com/caicutec">projects</a>
-        
-        <div class="icon-flex">
-          <a href="mailto:jayang@ucsd.edu">
-            <span class="fa-stack fa-lg">
-              <i class="fas fa-envelope-open-text"></i>
-            </span>
-          </a>
-          <a href="https://github.com/caicutec">
-            <span class="fa-stack fa-lg">
-              <i class="fab fa-github"></i>
-            </span>
-          </a>
-          <a href="https://codepen.io/caicutec/">
-            <span class="fa-stack fa-lg">
-              <i class="fab fa-codepen"></i>
-            </span>
-          </a>
-        </div>
-    </div>
+
     <body>
-      <div class="movable-img">
-            <div class="img-text">
-         {{ content }}
-            </div>
+      <input type="checkbox" id="chk">
+      <label for="chk" class="show-menu menuBtn type1"><span></span></label>
+        <div class="menu">
+          <a href="/">home</a>
+          <a href="#about">about</a>
+          <a href="https://stonks-io.firebaseapp.com">stonks.io</a>
+          <a href="https://github.com/caicutec">projects</a>
+          
+          <div class="icon-flex">
+            <a href="mailto:jayang@ucsd.edu">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-envelope-open-text"></i>
+              </span>
+            </a>
+            <a href="https://github.com/caicutec">
+              <span class="fa-stack fa-lg">
+                <i class="fab fa-github"></i>
+              </span>
+            </a>
+            <a href="https://codepen.io/caicutec/">
+              <span class="fa-stack fa-lg">
+                <i class="fab fa-codepen"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      <div class="wrapper">
+        
+        {{ content }}
       </div>
-      
-    <script>
-      $('.menuBtn').on('click', function(){
-        $(this).toggleClass('close');
-      });
-      /*
-      $('#about').on('mouseover', function(){
-        var x = document.getElementsByClassName('overlay-img');
-        $(x[0]).addClass('overlaid');
-        $(x[0]).removeClass('under-img');
-      });
-      */
-    </script>
+      <script>
+        $('.menuBtn').on('click', function(){
+          $(this).toggleClass('close');
+        });
+      </script>
     </body>
