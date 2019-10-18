@@ -5,47 +5,89 @@
       <title>Jack Yang</title>
       <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico"/>
       <link rel="stylesheet/less" type="text/less" href="/less/main.less" />
+      <link rel="stylesheet/less" type="text/less" href="/less/menu.less" />
       <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="/css/menu.css">
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.css">
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
 
     <body>
+      <div class="menu-btn-bar">
+      </div>
       <input type="checkbox" id="chk">
       <label for="chk" class="show-menu menuBtn type1"><span></span></label>
         <div class="menu">
-          <a href="/">home</a>
-          <a href="#about">about</a>
-          <a href="https://stonks-io.firebaseapp.com">stonks.io</a>
-          <a href="https://github.com/caicutec">projects</a>
+          <div class="nav">
+              <a href="#" id="about-btn">ABOUT</a>
+              <a href="#" id="skill-btn">SKILLS</a>
+              <a href="#" id="misc-btn">MISC</a>
+          </div>
+          <div class="menu-text about-text active">
+            <h2>Faber est quisque suae fortunae</h2>
+            <p>I'm Jack, a software developer and graphic designer based in California. 
+              I've been studying at UCSD since 2018, and am currently pursuing a B.S. in Computer Science with a minor in Design/HCI. <br/><br/>
+              On this site you can find some of the projects I've made at past hackathons, as well as projects I've been making in my free time.
+              When I'm not in class or working on coding projects, I'm drawing, finding new books and music, and brushing up on my quiz bowl knowledge.
+            <br/><br/><a href="/imgs/Resume.pdf"> My resume!</a></p>
+          </div>
+          <div class="menu-text skill-text">
+              <h2>Skills</h2>
+              <p>Juggling</p>
+          </div>
+          <div class="menu-text misc-text">
+              <h2>Misc</h2>
+              <p>Juggling</p>
+          </div>
           
           <div class="icon-flex">
-            <a href="mailto:jayang@ucsd.edu">
+            <a href="mailto:jayang@ucsd.edu" id="icon">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-envelope-open-text"></i>
               </span>
             </a>
-            <a href="https://github.com/caicutec">
+            <a href="https://github.com/caicutec" id="icon">
               <span class="fa-stack fa-lg">
                 <i class="fab fa-github"></i>
               </span>
             </a>
-            <a href="https://codepen.io/caicutec/">
+            <a href="https://codepen.io/caicutec/" id="icon">
               <span class="fa-stack fa-lg">
                 <i class="fab fa-codepen"></i>
+              </span>
+            </a>
+            <a href="https://codepen.io/caicutec/" id="icon">
+              <span class="fa-stack fa-lg">
+                <i class="fab fa-dribbble"></i>
               </span>
             </a>
           </div>
         </div>
       <div class="wrapper">
-        
         {{ content }}
       </div>
       <script>
         $('.menuBtn').on('click', function(){
           $(this).toggleClass('close');
+        });
+
+        $('#about-btn').on('click', function(){
+          if(!$('.about-text').hasClass('active')){
+            $('.active').removeClass('active')
+            $('.about-text').toggleClass('active');
+          }
+        });
+        $('#skill-btn').on('click', function(){
+          if(!$('.skill-text').hasClass('active')){
+            $('.active').removeClass('active')
+            $('.skill-text').toggleClass('active');
+          }
+        });
+        $('#misc-btn').on('click', function(){
+          if(!$('.misc-text').hasClass('active')){
+            $('.active').removeClass('active')
+            $('.misc-text').toggleClass('active');
+          }
         });
       </script>
     </body>

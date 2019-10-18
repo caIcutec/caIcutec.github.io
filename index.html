@@ -3,64 +3,208 @@ layout: default
 title: Jack Yang
 ---
 <link rel="stylesheet/less" href="/less/main.less" />
+<link rel="stylesheet/less" href="/less/gallery.less" />
 <link rel="stylesheet/less" href="/less/albums.less" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<div class="main" style="background-color:#fff; z-index:-3">
-	
-		<div id="windowframe"></div>
-	<div>
+<div class="main" style="z-index:0">
+	<div style="text-align:left">
 		<h1 id="title" style="z-index:1">Jack Yang</h1>
 		<p id="subtitle"></p>
 	</div>
-	<div id="parallax1">
-	<div id="about">
-		<div class="img-container"></div>
-		<h1>Hey!</h1>
-		<p> I'm Jack, a software developer and graphic designer based in California. 
-			I've been studying at UCSD since 2018, and am currently pursuing a B.S. in Computer Science with a minor in Design/HCI. <br/><br/>
-			On this site you can find some of the projects I've made at past hackathons, as well as projects I've been making in my free time 
-			(Check out their links below!).
-			When I'm not in class or working on coding projects, I'm participating in CTF tournaments, reading, drawing, and making music.</p><br/>
-		<a href="/imgs/Resume.pdf">View my resume</a>
-	</div>
-	</div>
+	<div class="title-img"><br/>pic goes here :)</div>
+<!--
+	<div id="gallery-wrapper">
+		<div id="gallery">
+		  <div id="thumbflex">
+			<div class="thumbnail">
+				<a href="https://i.imgur.com/gRRQQuR.jpg" data-lightbox="image-1" data-title="<i>Construction Blues</i>. For UCSD's <i>The Muir Quarterly</i>.">
+				  <img src="https://i.imgur.com/gRRQQuR.jpg" id="img1"></img>
+				</a>
+			  </div>
+			<div class="thumbnail">
+				  <a href="https://i.imgur.com/ErBxQJ3.jpg" data-lightbox="image-1" data-title="<i>The 51st State of Emergency</i>. For UCSD's <i>The Muir Quarterly</i>.">
+					<img src="https://i.imgur.com/ErBxQJ3.jpg" id="img2"></img>
+				  </a>
+			</div>
+			<div class="thumbnail">
+			  <a href="https://i.imgur.com/s9sQ9XY.jpg" data-lightbox="image-1" data-title="<i>Parking Hijinx</i>. For UCSD's The MQ.">
+				  <img src="https://i.imgur.com/s9sQ9XY.jpg" id="img3"></img>
+				</a>
+			</div>
+			<div class="thumbnail">
+			  <a href="https://i.imgur.com/x3Hyeze.jpg" data-lightbox="image-1" data-title="<i>A Crime Most Foul</i>. For UCSD's The MQ.">
+				<img src="https://i.imgur.com/x3Hyeze.jpg" id="img4"></img>
+			  </a>
+			</div>
+			<div class="thumbnail">
+			  <div class="intro">
+				<h1>The MQ</h1>
+				<p>Graphics i've made as Head Graphics Editor for UCSD's satire publication, the MQ.</p>
+				<a href="themq.com">The MQ Site</a>
+			  </div>
+			</div>
+			<div class="thumbnail">
+				<a href="https://i.imgur.com/FgdALnt.jpg" data-lightbox="image-1" data-title="<i>Surprise in Every Box</i>. For UCSD's The MQ.">
+				  <img src="https://i.imgur.com/FgdALnt.jpg" id="img5"></img>
+				</a>
+			</div>
+			<div class="thumbnail">
+				<a href="https://i2.wp.com/themq.org/wp-content/uploads/2019/02/YANGemergency.jpg?resize=854%2C540&ssl=1" data-lightbox="image-1" data-title="<i>The 51st State of Emergency</i>. For UCSD's <i>The Muir Quarterly</i>.">
+				  <img src="https://i2.wp.com/themq.org/wp-content/uploads/2019/02/YANGemergency.jpg?resize=854%2C540&ssl=1" id="img6"></img>
+				</a>
+			</div>
+			<div class="thumbnail">
+				<a href="https://i.imgur.com/JGM8cks.jpg" data-lightbox="image-1" data-title="<i>VMAs Discover 'Urban Music'</i>. For UCSD's The MQ.">
+				  <img src="https://i.imgur.com/JGM8cks.jpg" id="img7"></img>
+				</a>
+			</div>
+			<div class="thumbnail" id="end">
+				<a href="https://i.imgur.com/SBbVgxe.jpg" data-lightbox="image-1" data-title="<i>Schoolhouse Rock Literalism</i>. For UCSD's The MQ.">
+				  <img src="https://i.imgur.com/SBbVgxe.jpg" id="img8"></img>
+				</a>
+			</div>
+		  </div>
+		</div>
+		<div id="gallery">
+		  <div id="thumbflex">
+			<div class="thumbnail">
+			  <a href="https://i.imgur.com/3l3emIz.png" data-lightbox="image-1" data-title="For UCSD ACM's soft skills workshop.">
+				<img src="https://i.imgur.com/3l3emIz.png" id="img9"></img>
+			  </a>
+			</div>
+			<div class="thumbnail">
+			  <div class="intro">
+				<h1>ACM</h1>
+				<p>Graphics i've made as Marketing Director for UCSD's chapter of the Association of Computing Machines.</p>
+				<a href="acmucsd.com">The ACM Site</a>
+			  </div>
+			</div>
+			<div class="thumbnail">
+			  <a href="https://i.imgur.com/tL3OQmE.jpg" data-lightbox="image-1" data-title="For UCSD ACM's Hack School series.">
+				<img src="https://i.imgur.com/tL3OQmE.jpg" id="img10"></img>
+			  </a>
+			</div>
+			<div class="thumbnail">
+							<a href="https://i.imgur.com/hmqdWhq.png" data-lightbox="image-1" data-title="For UCSD ACM's Fall Welcome Bonfire.">
+								<img src="https://i.imgur.com/hmqdWhq.png" id="img11"></img>
+							</a>
+			</div>
+			<div class="thumbnail">
+			  <a href="https://i.imgur.com/x3Hyeze.jpg" data-lightbox="image-1" data-title="<i>A Crime Most Foul</i>. For UCSD's The MQ.">
+				<img src="https://i.imgur.com/x3Hyeze.jpg" id="img4"></img>
+			  </a>
+			</div>
+			<div class="thumbnail">
+				<a href="https://i.imgur.com/FgdALnt.jpg" data-lightbox="image-1" data-title="<i>Surprise in Every Box</i>. For UCSD's The MQ.">
+				  <img src="https://i.imgur.com/FgdALnt.jpg" id="img5"></img>
+				</a>
+			</div>
+			<div class="thumbnail">
+				<a href="https://i2.wp.com/themq.org/wp-content/uploads/2019/02/YANGemergency.jpg?resize=854%2C540&ssl=1" data-lightbox="image-1" data-title="<i>The 51st State of Emergency</i>. For UCSD's <i>The Muir Quarterly</i>.">
+				  <img src="https://i2.wp.com/themq.org/wp-content/uploads/2019/02/YANGemergency.jpg?resize=854%2C540&ssl=1" id="img6"></img>
+				</a>
+			</div>
+			<div class="thumbnail">
+				<a href="https://i.imgur.com/JGM8cks.jpg" data-lightbox="image-1" data-title="<i>VMAs Discover 'Urban Music'</i>. For UCSD's The MQ.">
+				  <img src="https://i.imgur.com/JGM8cks.jpg" id="img7"></img>
+				</a>
+			</div>
+			<div class="thumbnail" id="end">
+				<a href="https://i.imgur.com/SBbVgxe.jpg" data-lightbox="image-1" data-title="<i>VMAs Discover 'Urban Music'</i>. For UCSD's The MQ.">
+				  <img src="https://i.imgur.com/SBbVgxe.jpg" id="img8"></img>
+				</a>
+			</div>
+		  </div>
+		</div>
+		<div id="gallery">
+		  <div id="thumbflex">
+			<div class="thumbnail">
+			  <a href="https://i.imgur.com/3l3emIz.png" data-lightbox="image-1" data-title="For UCSD ACM's soft skills workshop.">
+				<img src="https://i.imgur.com/3l3emIz.png" id="img9"></img>
+			  </a>
+			</div>
+			<div class="thumbnail">
+			  <a href="https://i.imgur.com/tL3OQmE.jpg" data-lightbox="image-1" data-title="For UCSD ACM's Hack School series.">
+				<img src="https://i.imgur.com/tL3OQmE.jpg" id="img10"></img>
+			  </a>
+			</div>
+			<div class="thumbnail">
+							<a href="https://i.imgur.com/hmqdWhq.png" data-lightbox="image-1" data-title="For UCSD ACM's Fall Welcome Bonfire.">
+								<img src="https://i.imgur.com/hmqdWhq.png" id="img11"></img>
+							</a>
+			</div>
+			<div class="thumbnail">
+			  <div class="intro">
+				<h1>Personal</h1>
+				<p>Graphics i've as part of personal projects, zines, etc.</p>
+				<a href="acmucsd.com">My Behance</a>
+			  </div>
+			</div>
+			<div class="thumbnail">
+			  <a href="https://i.imgur.com/x3Hyeze.jpg" data-lightbox="image-1" data-title="<i>A Crime Most Foul</i>. For UCSD's The MQ.">
+				<img src="https://i.imgur.com/x3Hyeze.jpg" id="img4"></img>
+			  </a>
+			</div>
+			<div class="thumbnail">
+				<a href="https://i.imgur.com/FgdALnt.jpg" data-lightbox="image-1" data-title="<i>Surprise in Every Box</i>. For UCSD's The MQ.">
+				  <img src="https://i.imgur.com/FgdALnt.jpg" id="img5"></img>
+				</a>
+			</div>
+			<div class="thumbnail">
+				<a href="https://i2.wp.com/themq.org/wp-content/uploads/2019/02/YANGemergency.jpg?resize=854%2C540&ssl=1" data-lightbox="image-1" data-title="<i>The 51st State of Emergency</i>. For UCSD's <i>The Muir Quarterly</i>.">
+				  <img src="https://i2.wp.com/themq.org/wp-content/uploads/2019/02/YANGemergency.jpg?resize=854%2C540&ssl=1" id="img6"></img>
+				</a>
+			</div>
+			<div class="thumbnail">
+				<a href="https://i.imgur.com/JGM8cks.jpg" data-lightbox="image-1" data-title="<i>VMAs Discover 'Urban Music'</i>. For UCSD's The MQ.">
+				  <img src="https://i.imgur.com/JGM8cks.jpg" id="img7"></img>
+				</a>
+			</div>
+			<div class="thumbnail" id="end">
+				<a href="https://i.imgur.com/SBbVgxe.jpg" data-lightbox="image-1" data-title="<i>VMAs Discover 'Urban Music'</i>. For UCSD's The MQ.">
+				  <img src="https://i.imgur.com/SBbVgxe.jpg" id="img8"></img>
+				</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
 	<div id="album-wrapper">
-	<div id="coverflow">
-		<div id="descript-box">
-		  <h2 id="album-title">Title</h2>
-		  <p id="album-descript">
-		  Use the keys to navigate!</p>
-		</div>
-  
-		 <section data-cover="https://theweereview.com/wp-content/uploads/2019/06/prince-daddy-cosmic-thrill-seekers.jpg" 
-				  album-title="<i>Cosmic Thrill Seekers</i><br>Prince Daddy and the Hyena"
-				  descript="<br><br>Fave Tracks: Breather, Dialogue">
-		   <a href="https://open.spotify.com/album/2LgKtZX7EA5fGxblUNNnEc"></a>
-		</section>
-		<section data-cover="https://media.pitchfork.com/photos/5a5e6f430c74bb56c7af6f0b/1:1/w_600/Ezra%20Furman.jpg" 
-				   album-title="<i>Transangelic Exodus</i><br>Ezra Furman"
-				   descript="<br><br>Fave Tracks: Suck the Blood from My Wound, No Place<br>Okay/Meh Tracks: The Great Unknown">
-			<a href="https://open.spotify.com/album/3avy9ZvrDRdDQKRcf1kJ6V"></a>
-		</section>
-		<section data-cover="https://f4.bcbits.com/img/a2228600663_10.jpg" 
-				 album-title="<i>Morbid Stuff</i><br>PUP"
-				 descript="<br><br>Fave Tracks: Kids, Scorpion Hill<br>"></section>
-		<section data-cover="https://f4.bcbits.com/img/a0402916090_10.jpg" 
-				 album-title="<i>Infest the Rat's Nest</i><br>King Gizzard and the Lizard Wizard"
-				 descript="Never was a huge fan of thrash metal, but King Gizz knocked it out of the park with this one. Kickin' tracks with a apocalyptic, environmentalist theme. 
-						   In total the portrayal of doom and chaos has some heavy <i>Nonagon Infinity</i> vibes, and I love it.
-						   <br><br>Fave Tracks: Perihelion, Mars for the Rich<br>Okay/Meh Tracks: Superbug"></section>
-		<section data-cover="https://pbs.twimg.com/media/D7t5EmhU0AAiaKU.jpg"
-				 album-title="<i>Flamboyant</i><br>Dorian Electra" ></section>
-		<section data-cover="https://f4.bcbits.com/img/a3169953789_10.jpg"
-				 album-title="<i>Breathe</i><br>Tiny Moving Parts"></section>
-		<section data-cover="https://f4.bcbits.com/img/a1225303261_5.jpg" 
-				 album-title="<i>Future Me Hates Me</i><br>The Beths"></section>
-				 
-		</div>
-	</div>
+	  <div id="coverflow">
+		  <div id="descript-box">
+			<h2 id="album-title">Title</h2>
+			<p id="album-descript">
+			Use the keys to navigate!</p>
+		  </div>
 	
+		   <section data-cover="https://theweereview.com/wp-content/uploads/2019/06/prince-daddy-cosmic-thrill-seekers.jpg" 
+					album-title="<i>Cosmic Thrill Seekers</i><br>Prince Daddy and the Hyena"
+					descript="<br><br>Fave Tracks: Breather, Dialogue">
+			 <a href="https://open.spotify.com/album/2LgKtZX7EA5fGxblUNNnEc"></a>
+		  </section>
+		  <section data-cover="https://media.pitchfork.com/photos/5a5e6f430c74bb56c7af6f0b/1:1/w_600/Ezra%20Furman.jpg" 
+					 album-title="<i>Transangelic Exodus</i><br>Ezra Furman"
+					 descript="<br><br>Fave Tracks: Suck the Blood from My Wound, No Place<br>Okay/Meh Tracks: The Great Unknown">
+			  <a href="https://open.spotify.com/album/3avy9ZvrDRdDQKRcf1kJ6V"></a>
+		  </section>
+		  <section data-cover="https://f4.bcbits.com/img/a2228600663_10.jpg" 
+				   album-title="<i>Morbid Stuff</i><br>PUP"
+				   descript="<br><br>Fave Tracks: Kids, Scorpion Hill<br>"></section>
+		  <section data-cover="https://f4.bcbits.com/img/a0402916090_10.jpg" 
+				   album-title="<i>Infest the Rat's Nest</i><br>King Gizzard and the Lizard Wizard"
+				   descript="Never was a huge fan of thrash metal, but King Gizz knocked it out of the park with this one. Kickin' tracks with a apocalyptic, environmentalist theme. 
+							 In total the portrayal of doom and chaos has some heavy <i>Nonagon Infinity</i> vibes, and I love it.
+							 <br><br>Fave Tracks: Perihelion, Mars for the Rich<br>Okay/Meh Tracks: Superbug"></section>
+		  <section data-cover="https://pbs.twimg.com/media/D7t5EmhU0AAiaKU.jpg"
+				   album-title="<i>Flamboyant</i><br>Dorian Electra" ></section>
+		  <section data-cover="https://f4.bcbits.com/img/a3169953789_10.jpg"
+				   album-title="<i>Breathe</i><br>Tiny Moving Parts"></section>
+		  <section data-cover="https://f4.bcbits.com/img/a1225303261_5.jpg" 
+				   album-title="<i>Future Me Hates Me</i><br>The Beths"></section>
+				   
+		  </div>
+	  </div>
+	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.js"></script>
 	<script src="/albums.js"></script>
 	<script>

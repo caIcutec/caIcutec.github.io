@@ -1,126 +1,58 @@
-@import url('https://fonts.googleapis.com/css?family=Archivo|Lato|Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo|Arvo&display=swap');
 
-@color-base:#000;
-.bg{
-    background-color:#fff;
-}
+@color-base:#75baff;
+@bg-color:#fff;
+@bg-compl:#000;
 
 body {
-    width: 100%;
-    height:100%;
-    background-color:#000;
+    width: 100vw;
+    height:100vh;
+    background-color:@bg-compl;
 }
+
+body::-webkit-scrollbar { display:none}
 
 .wrapper {
-    font-family: 'Spectral', serif;
-    overflow-y:auto;
+    position:relative;
+    width:100%;
+    height:100%;
     overflow-x:hidden;
-    .bg
+    background-color: @bg-color;
+
+    #title {
+      position:absolute;
+      font-size: 8vw;
+      font-family: 'grad', serif;
+      line-height: 1em;
+      margin-top:18vw;
+      margin-left:18vw;
+      margin-bottom:10px;
+    }
+
+    #subtitle {
+      position:absolute;
+      text-align:center;
+      width:50vw;
+      height:5vh;
+      font-size: 2vw;
+      font-family: 'Archivo', sans-serif;
+      font-style: italic;
+      line-height:1em;
+      margin:auto;
+      margin-top:26vw;
+      margin-left:11vw;
+    }
+
+    .title-img{
+      position:absolute;
+      height:20vw;
+      width:20vw;
+      margin-left:61vw;
+      margin-top:14vw;
+      border-radius:10vw;
+      background-color:#134512;
+      text-align:center;
+      color:#fff
+    }
 }
 
-.wrapper::-webkit-scrollbar { width: 0 !important }
-
-#title {
-  font-size: 100px;
-  font-family: 'Spectral', serif;
-  line-height: 1em;
-  margin-top:30vh;
-  margin-left:200px;
-  margin-bottom:20px;
-}
-
-#subtitle {
-  font-size: 25px;
-  font-family: 'Archivo', sans-serif;
-  font-style: italic;
-  line-height:1em;
-  margin:auto;
-  margin-left:315px;
-}
-
-#windowframe{
-    width: 0; 
-    height: 0; 
-    border-top: 1000px solid transparent;
-    border-bottom:1000px solid transparent;
-    border-left:1000px solid #fff;
-    transform:rotate(-94deg);
-    z-index:-1;
-    position:absolute;
-    top:-855px;left:170px;
-}
-
-#parallax1{
-    height:900px;
-    width:100vw;
-    background-image:url(https://miro.medium.com/max/3840/1*s9pTH7fpkN2SUCHSGG-HXQ.jpeg);
-    z-index:-3;
-    position:absolute
-}
-
-#about {
-  padding:25px;
-  padding-bottom:0;
-  text-align:left;
-  width:80%;
-  height:275px;
-  margin:auto;
-  border-radius: 20px;
-  margin-top: 500px;
-  z-index:inherit;
-  overflow-y:hidden;
-  .bg;
-
-  &:hover .img-container{
-    clip-path: circle(200% at 50% 0%);
-    background-image:url("../imgs/me2.jpg");
-  }
-
-  .img-container{
-    width:250px;
-    height:250px;
-    padding:0;
-    padding-top:-5px;
-    position:absolute;
-    border-radius: 20px;
-    overflow:hidden;
-    background-image:url("../imgs/me.jpg");
-    background-size: 250px 250px;
-    clip-path: circle(50% at 50% 50%);
-    transition: all .5s ease-in-out;
-    animation-fill-mode:forwards;
-  }
-
-  p{
-    font-size:20px;
-    color: black;
-    font-family: 'Archivo',sans-serif;
-    line-height:1em;
-    margin-left:275px;
-    margin-top:20px;
-    margin-bottom:0;
-    width:auto;
-  }
-
-  h1{
-    font-size: 40px;
-    color: black;
-    font-family: 'Spectral';
-    line-height:0.75em;
-    margin-left:275px;
-    margin-bottom:0;
-    margin-top:10px;
-    width:40%;
-  }
-
-  a{
-    font-size:20px;
-    text-decoration:none;
-    font-family: 'Archivo',sans-serif;
-    line-height:1em;
-    margin-left:275px;
-    margin-top:20px;
-    margin-bottom:0;
-    width:auto;
-  }
-}
