@@ -8,14 +8,20 @@ title: Jack Yang
 <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <div class="main" style="z-index:0">
-	<div style="text-align:left">
-		<h1 id="title" style="z-index:1">Jack Yang</h1>
-		<p id="subtitle"></p>
-		
+	<div style="text-align:center">
+		<h1 id="title" style="z-index:1"> jy.</h1>
+		<div id="logo"></div>
 	</div>
-	<div class="title-img"></div>
-	<div style="background-color:#f0f0f0;padding:2vw;border-radius:1vw;position:absolute;width:30vw;height:8vw;text-align:left;margin-top:35vw;margin-left:33vw;">	<p style="margin-top:-0.5vw;font-size:1vw;">Hey! <br><br>I'm currently writing a case study on my latest project. Can't wait to tell you all about it! <br><br>Until then, check out some info about me in the side menu.</p s></div>
-
+	<div id="subtitle"><p>Jack Yang</p> is a UX and visual designer creating <p2>impactful designs</p2> centered on everyday experiences.</div>
+	<div class="exhibit">
+		<img src="imgs/Focus Time.png">
+		<div id="info">
+			<p>Focus Time</p><br>
+			<p2>Designer and Frontend Developer</p2><br>
+			<p3>Time management made simple - a productivity app building helpful habits.</p3>
+		</div>
+	</div>
+</div>
 <!--
 	<div id="gallery-wrapper">
 		<div id="gallery">
@@ -210,26 +216,4 @@ title: Jack Yang
 	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.js"></script>
 	<script src="/albums.js"></script>
-	<script>
-		var i = 0;
-		var j = 0;
-		var titles = ['Software Engineer','Web Developer','Multimedia Artist','CTF Enthusiast','Aspiring Designer','NaN                ... Just kidding :)','Literature Buff','Magazine Editor']; /* The text */
-		var speed = 50; /* The speed/duration of the effect in milliseconds */
-		var currentTitle = titles[j];
-
-		function typeWriter() {
-			if (i < currentTitle.length) {
-				document.getElementById("subtitle").innerHTML += currentTitle.charAt(i);
-				i++;
-				setTimeout(typeWriter, speed);
-			} else {
-				i = 0;
-				j = (j+1) % titles.length;
-				currentTitle = titles[j];
-				setTimeout(function(){document.getElementById("subtitle").innerHTML = "";}, 3000);
-				setTimeout(typeWriter,3000);
-			}
-		}
-		typeWriter();
-	</script>
 </div></div>

@@ -24,42 +24,112 @@ body::-webkit-scrollbar { display:none}
     overflow-x:hidden;
     background-color: @bg-color;
 
-    #title {
-      position:absolute;
-      font-size: 6vw;
-      font-family: 'Tiempos', serif;
-      
-      line-height: 1em;
-      margin-top:18vw;
-      margin-left:26vw;
-      margin-bottom:10px;
+    #title {      
+      position: absolute;
+      width: 99px;
+      height: 100px;
+      left: 151px;
+      top: 100px;
+      margin:0;
+      margin-left:25px;
+
+      font-family:'Tiempos', serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 50px;
+      line-height: 72px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.232836px;
+
+      color: #FFFFFF;
+    }
+
+    #logo {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      left: 150px;  
+      top: 100px;
+      background: #2F80ED;
     }
 
     #subtitle {
-      position:absolute;
-      text-align:center;
-      width:50vw;
-      height:5vh;
-      font-size: 2vw;
-      font-family: 'Archivo', sans-serif;
-      font-style: italic;
-      line-height:1em;
-      margin:auto;
-      margin-top:24.5vw;
-      margin-left:15vw;
+      position: absolute;
+      display:inline;
+      width: 800px;
+      height: 76px;
+      left: 150px;
+      top: 250px;
+
+      font-family:'Tiempos';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 38px;
+
+      color: #000000;
+      p {
+        display:inline;
+        color:#2F80ED;
+      }
+      p2 {
+        display:inline;
+        color:#ff6d6d;
+      }
+    }
+    .exhibit{
+      position: absolute;
+      width: 1080px;
+      height: 400px;
+      left: 150px;
+      top: 375px;
+      background-color: #f0f0f0;
+
+      img {
+        height:400px;
+      }
+
+      #info{
+        position:absolute;
+        top:91px;
+        height:200px;
+        width:300px;
+        left:771px;
+        text-align:left;
+        color:black;
+
+        p{
+          display:inline;
+          width: 800px;
+          height: 76px;
+          left: 150px;
+          top: 250px;
+
+          font-family:'Tiempos';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 38px;
+
+          color: #000000;
+        }
+
+        p2, p3{
+          margin-top:10px;
+          font-family: 'Roboto';
+          font-size: 16px;
+          line-height: 19px;
+
+          color: #777777;
+        }
+
+        p2{
+          font-style:bold
+        }
+      }
     }
 
-    .title-img{
-      position:absolute;
-      height:15vw;
-      width:15vw;
-      margin-left:58vw;
-      margin-top:14vw;
-      border-radius:10vw;
-      background-image:url('/imgs/me.jpg');
-      background-size:100%;
-      text-align:center;
-      color:#fff
-    }
 }
 
