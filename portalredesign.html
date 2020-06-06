@@ -1,0 +1,122 @@
+---
+layout: default
+title: Jack Yang
+---
+<link rel="stylesheet/less" href="/less/main.less" />
+<link rel="stylesheet/less" href="/less/gallery.less" />
+<link rel="stylesheet/less" href="/less/albums.less" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<div class="main" style="z-index:0">
+	<div style="text-align:center">
+		<a href="/"><span>
+			<h1 id="title" style="z-index:1"> jy.</h1>
+			<div id="logo"></div>
+		</span></a>
+	</div>
+	<div class="cs">
+		<img src="imgs/portal.png" style="width: 60%;border:1px">
+		<h1>ACM Membership Portal Redesign</h1>
+		<h2>
+			Design Project<br>
+			ACM UC San Diego
+		</h2>
+		<br>
+		<h2>Background</h2>
+		<p>
+			Founded in Spring of 2019, UC San Diego's student chapter of the Association of Computing Machinery grew from a handful of students meeting in empty lecture halls to the largest engineering organization on campus. Today, over 1,000 student developers, designers, and researchers have joined ACM in our weekly technical workshops, industry meet-and-greets, and student socials.
+			<br><br>As our organization continued to expand, we in ACM's Design Team were tasked with reimagining the ACM membership portal as a one-stop-shop for all things ACM, where users check into events, order ACM merchandise, see the latest in student articles and podcasts, and more.
+			<br><br><b>In ACM UCSD, members come first. By updating our portal's features, design, and accessibility, we can ensure that the experience of using the portal is engaging and hassle-free.</b>
+		</p>
+		<br>
+		<div style="width:60%;text-align:center; color:#ffffff;background-color: #000;height:30%">
+			<div style="height:1px"></div>
+			<h2>Meet Our Team</h2>
+			<div style="display:flex; flex-direction: row; width:60%;margin:auto;">
+				<div style="width:150px;text-align:center;font-size:16px">			
+					<img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-1/91418260_1303922573331089_2603691028321927168_n.jpg?_nc_cat=107&_nc_sid=dbb9e7&_nc_ohc=Gyo8LhKtNMwAX-Qs7lQ&_nc_ht=scontent-lax3-2.xx&oh=2623f495dbcba1eaaa96985fc7173add&oe=5EFF3727" style="width:100px;height:100px;border-radius:50px;background-color:#22acea">
+					<br><b>Amy An</b>
+					<br><i>Designer</i>
+				</div>
+				<div style="width:150px;text-align:center;font-size:16px">			
+					<img src="https://acmucsd.s3.us-west-1.amazonaws.com/portal/profiles/8ba3f13b-3493-4f5d-8ac2-bfcb55ca0f90.jpg" style="width:100px;height:100px;border-radius:50px;background-color:#22acea">
+					<br><b>Kendall Nakai</b>
+					<br><i>Designer</i>
+				</div>
+				<div style="width:150px;text-align:center;font-size:16px">			
+					<img src="imgs/me.jpg" style="width:100px;height:100px;border-radius:50px;background-color:#22acea">
+					<br><b>Jack Yang</b>
+					<br><i>Designer</i>
+				</div>
+			</div>
+			<br>
+			<br>
+		</div>
+		<br><br>
+		<br>
+		<h2>Examining the Problem</h2>
+		<p>
+			Our first goal for the redesign was to learn from what worked with the existing portal, and what didn't. 
+			<br><br>The original portal functions as follows: Users log in to accounts and can see event information on the portal. They can also check into events by typing in codes given out at the events. The points they get advance their rank on a leaderboard. 
+		</p>
+			<div style="width:60%;text-align:center">
+				<img src="imgs/acmportal/oldportal_1.png"style="width:48%">
+				<img src="imgs/acmportal/oldportal_2.png"style="width:48%;margin-left:3%">
+				<img src="imgs/acmportal/oldportal_3.png"style="width:48%;margin-top:3%">
+				<img src="imgs/acmportal/oldportal_4.png"style="width:48%;margin-top:3%;margin-left:3%">	
+				<p></p>
+				<i>Screenshots of the existing membership portal.</i>
+			</div>
+			<br>
+			<p>
+				To pinpoint some of the chief reasons users use the portal, we sent out a survey to our general members. Additionally, we hosted a few interviews with members of ACM's Board affiliated with event coordination and development.
+			</p>
+			<div style="width:60%">
+				<img src="imgs/User Research.png" style="width:80%;margin-left:10%;">
+			</div>
+		<h2>Analysis</h2>
+		<p>
+			Considering the responses to our survey and comments of ACM's Board, we came to agree that the portal's main appeal was checking into events and accumulating points. 
+			For the redesign, this meant that we should strive to maintain the check-in system's efficiency or seek more convenient and accessible forms of checking in. We settled on the following central features for the portal:
+			<ul style="width:60%">
+				<li>A central home page where you can check in, view events, etc.</li>
+				<li>A customizable profile where you can include social media links, earn badges, see points, etc.</li>
+				<li>A leaderboard where you can view your rank</li>
+				<li>A store page where points can be redeemed for ACM merchandise</li>
+				<li>'Explore', a page where users can see the latest in ACM podcasts, livestreams, articles, and programs.</li>
+			</ul>
+		</p>
+
+		<br><br>
+		<h2>Prototyping</h2>
+		<h3>Paper Prototype</h3>
+		<p>Building off the results from our user research, each of us made a paper prototype for mobile. The prototypes all experimented with ways of checking in, and I created one around my idea for a QR-code check-in.
+		   By having users scan an event QR code at the event, the hassle of typos and switching back and forth between alpha and numeric keyboards can be eliminated.
+		</p>
+		<div style="width:60%;text-align:center;">
+			<img src="imgs/acmportal/paper_proto.png" style="width:100%"><br>
+			<i style="width:60%;text-align:center;">Photos of my paper prototype, linked in Figma.</i>
+			<br><br>
+			<img src="imgs/acmportal/paper_proto.gif" style="position:absolute;margin-left:-210px;overflow:hidden;
+			clip: rect(10px, 300px, 320px, 120px);"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<i style="width:60%;text-align:center;">GIF of prototype functionality.</i>
+		</div>
+
+		<h3>Mid-Fi Prototype</h3>
+		<div style="width:60%;text-align:center;">
+			<img src="imgs/acmportal/midfi.png" style="width:100%"><br>
+			<i>The prototype frames.</i><br><br>
+			<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/h_8oPlVbHA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</video><br><i>GIF of prototype functionality.</i><br>
+		</div>
+
+		<h2>Final Designs</h2>
+		<div style="width:60%;text-align:center;">
+			<img src="imgs/acmportal/midfi.png" style="width:100%"><br>
+			<i>The prototype frames.</i><br><br>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/FpXpCVdSmy4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</video><br><i>GIF of prototype functionality.</i><br><br>
+			<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTLcE9SD2MUpwxs6FRn2nXX%2FDesign-Jam-Doc%3Fnode-id%3D2418%253A326%26viewport%3D1037%252C-711%252C0.125%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
