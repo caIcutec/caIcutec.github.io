@@ -26,23 +26,56 @@ title: Jack Yang
             Without acceleration structures, the rendering of scene7 took about half an hour. Most other scenes took under a minute.
             I used FreeImage to export the PNGs and glm for matrix calculations. OpenMP was also used to optimize intersection testing.
 
-			For shading, we used the Blinn-Phong model
+			For shading, we used the Blinn-Phong model.
 			<br><br>
 		</p>
-		<img src="imgs/graphics/scene4-specular.png" style="width: 20vw;">
-		<img src="imgs/graphics/scene5.png" style="width: 20vw;"><br>
-		<img src="imgs/graphics/scene6.png" style="width: 20vw;">
-		<img src="imgs/graphics/scene7.png" style="width: 20vw;"><br><br>
-		<p3 style="position:relative;font-style: italic;left:3vw">From top, clockwise: Scene testing reflcetions; One thousand spheres; Cornell Box; Stanford Dragon.</p3>
-
+		<div style=" width:50vw; justify-content: center;">
+			<img src="imgs/graphics/scene4-specular.png" style="width: 20vw;margin-left: 5vw;">
+			<img src="imgs/graphics/scene5.png" style="width: 20vw;"><br>
+			<img src="imgs/graphics/scene6.png" style="width: 20vw;margin-left: 5vw;">
+			<img src="imgs/graphics/scene7.png" style="width: 20vw;"><br><br>
+			<p3 style="position:relative;font-style: italic;left:3vw">From top, clockwise: Scene testing reflcetions; One thousand spheres; Cornell Box; Stanford Dragon.</p3>
+		</div>
 		<h2>Part 2: Direct Lighting</h2>
 		<p style="width:100vh">
 			You'll notice on the above images, however, that the ray tracer is quite simplistic; The shadows are pitch black and have hard edges, and light seemingly
 			comes out of these infinitesimally small points (in the case of the Cornell Box). For part two of this project, we implemented a more realistic means of direct lighting,
-			in which we integrate over the area of area lights to calculate shading.</p>
-		<img src="imgs/graphics/hw2dragon.png" style="width: 20vw;">
-		<img src="imgs/graphics/hw2sphere.png" style="width: 20vw;"><br>
-		<img src="imgs/graphics/hw2cornell.png" style="width: 20vw;">
+			in which a Monte Carlo integrator is used to integrate over the area lights to calculate shading.</p><br>
+			<div style=" width:50vw; justify-content: center;">
+				<img src="imgs/graphics/hw2dragon.png" style="width: 20vw;margin-left: 5vw;">
+				<img src="imgs/graphics/hw2sphere.png" style="width: 20vw;"><br>
+				<img src="imgs/graphics/hw2cornell.png" style="width: 20vw;margin-left: 5vw;"><br><br>
+				<p3 style="position:relative;font-style: italic;left:3vw">From top, clockwise: Stanford Dragon, Colored Lights, and Cornell Box, illuminated by Monte Carlo Direct Light.</p3>
+			</div>
+
+		<h2>Part 3: Monte Carlo Path Tracer</h2>
+		<p style="width:100vh">
+			For part three of this project, we implemented a Monte Carlo Path Tracer to address indirect lighting. The program was edited to support setting custom samples per pixel values,
+		 and now casts multiple rays across the area of the pixel, each ray going on to bounce and accumulate light from the surfaces in the scene. <br><br>We also implemented next event 
+		estimation, in which rays, rather than terminating (and returning 0) on the maximum depth, will return the direct lighting of the intersection. Finally, a russian roulette based on the throughput calculated at 
+		each intersection was used to terminate rays at various depths for a more polished final image.</p>
+		<div style=" width:50vw; justify-content: center;">
+			<img src="imgs/graphics/cornellSimple.png" style="width: 20vw;margin-left: 5vw;">
+			<img src="imgs/graphics/cornellNEE.png" style="width: 20vw;"><br>
+			<img src="imgs/graphics/cornellRR.png" style="width: 20vw;margin-left: 5vw;">
+			<img src="imgs/graphics/dragon.png" style="width: 20vw;"><br><br>
+			<p3 style="position:relative;font-style: italic;left:3vw">From top, clockwise: Cornell Box, illuminated by the base Monte Carlo path tracer, then with next event estimation, and then russian roulette. Stanford Dragon with next event estimation and russian roulette.</p3>
+		</div>
+
+		<h2>Part 4: Multiple Importance Sampling</h2>
+		<p style="width:100vh">
+			For part four of this project, we implemented different modes of importance sampling to better address a variety of material surfaces. Though sampling uniformly on the visible hemisphere (as we did before) is fine for opaque surfaces, 
+			for near mirror surfaces we require different sampling strategies. <br><br>
+			We also implemented a GGX BRDF function, which accounts for material roughness instead of the generic shininess we used in our Modifed Phong BRDF. Using the GGX microfacet distribution funciton, Schlick's Approximation of the Fresnel Equations, and the Smith shadow masking function, 
+			we can achieve an image with many different material properties that vary in specularity and opacity.</p>
+		<div style=" width:50vw; justify-content: center;">
+			<img src="imgs/graphics/cornellCosine.png" style="width: 20vw;margin-left: 5vw;">
+			<img src="imgs/graphics/cornellBRDF.png" style="width: 20vw;"><br>
+			<img src="imgs/graphics/ggx.png" style="width: 45vw;margin-left: 5vw;"><br><br>
+			<p3 style="position:relative;font-style: italic;left:3vw">From top, clockwise: Cornell Box, featuring cosine and Modified Phong BRDF sampling, respectively. Finally, a sample image showcasing the capabilities of GGX.</p3>
+		</div>
+		<br><br>
+		
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.js"></script>
 	<script src="/albums.js"></script>
