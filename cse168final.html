@@ -1,0 +1,47 @@
+---
+layout: default
+title: Jack Yang
+---
+<link rel="stylesheet/less" href="/less/main.less" />
+<link rel="stylesheet/less" href="/less/gallery.less" />
+<link rel="stylesheet/less" href="/less/albums.less" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<div class="main" style="z-index:0">
+	<div style="text-align:center">
+		<a href="/"><span>
+			<h1 id="title" style="z-index:1"> jy.</h1>
+			<div id="logo"></div>
+		</span></a>
+	</div>
+	<div class="cs">
+		<h1>Volume Rendering Project Proposal</h1>
+		<h2>
+			Computer Graphics II<br>
+			UC San Diego (CSE 168)
+		</h2>
+		<p style="width:60vw">Hi there! For my final project in CSE 168 I am planning to implement volumetric rendering in my existing path tracer.
+		   This would likely take the form of a new integrator that will eventually render both homogenous and heterogenous volumes
+		   defined by bounding boxes / spheres.</p>
+		   <br><br>
+		   <div style=" width:80vw; justify-content: left;">
+			<img src="imgs/graphics/rats.png" style="width: 20vw;margin-left: 5vw;">
+			<img src="imgs/graphics/out.png" style="height: 20vw;"><br>
+		   </div>
+		   <br><br><p style="width:60vw">
+		   Seeing the examples of rendered smoke clouds in lecture, I was inspired to try and recreate the album art for one of my favorite 
+		   band's albums. Using an STL model of the central sculpture, and a few simple boxes / quadlights, I was able to model the image in blender. 
+		   From Blender I have exported an .obj file and modified the program from the previous homeworks to read said file.
+		</p><br><br>
+		   <div style=" width:80vw; justify-content: left;">
+			<img src="imgs/graphics/cornellVolume.png" style="width: 40vw;margin-left: 5vw;">
+		   </div><p style="width:60vw">
+		   As far as the beginnings of rendering the smoke, I have been working on an absorption function. The algorithm currently handles volumes by
+		   continuing to cast the ray if the material intersected is marked as part of a volume, and marking the distance traveled within the volume.
+		   Eventually, when a surface other than a volume is hit, the path tracer resumes as normal, and all the later bounces are combined and multiplied by
+		   an absorption coefficient. As you can see there are some issues with shape edges and how the box is composed of triangles rather than being a box itself, 
+		   all things I will be looking to fix in the two weeks.
+		</p>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.js"></script>
+	<script src="/albums.js"></script>
+</div></div>
